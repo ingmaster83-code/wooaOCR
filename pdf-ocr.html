@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZGENFSXWC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9ZGENFSXWC');
+</script>
+  <meta charset="UTF-8">
+  <meta name="naver-site-verification" content="7396a327607b884b9bef1283dfd3a5c6115a2b50">
+  <meta name="google-site-verification" content="tNM8tmr_6DFold03YSScWz4KEtu5Zo0Fsqc03u5Afms">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF OCR 무료 — 스캔 PDF 텍스트 추출 온라인 | WooaOCR</title>
+  <meta name="description" content="스캔된 PDF에서 텍스트를 무료로 추출하는 온라인 OCR 도구. 한국어·영어 지원. 파일이 서버에 저장되지 않아 100% 안전합니다.">
+  <meta name="keywords" content="PDF OCR, 스캔 PDF 텍스트 추출, PDF 텍스트 인식, PDF 복사 안될때, 스캔 문서 텍스트, 무료 PDF OCR, WooaOCR">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ocrkit.wooahouse.com/pdf-ocr.html">
+  <meta property="og:title" content="PDF OCR 무료 — 스캔 PDF 텍스트 추출 | WooaOCR">
+  <meta property="og:description" content="스캔된 PDF에서 텍스트를 무료로 추출. 한국어·영어 OCR 지원. 서버 저장 없이 안전하게.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ocrkit.wooahouse.com/pdf-ocr.html">
+  <meta property="og:locale" content="ko_KR">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PDF OCR | WooaOCR",
+    "url": "https://ocrkit.wooahouse.com/pdf-ocr.html",
+    "description": "스캔된 PDF에서 텍스트를 무료로 추출하는 온라인 OCR 도구",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Web",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"일반 PDF와 스캔 PDF의 차이는?","acceptedAnswer":{"@type":"Answer","text":"일반 PDF는 텍스트 레이어가 있어 복사가 되고, 스캔 PDF는 이미지로만 구성되어 OCR이 필요합니다."}},
+      {"@type":"Question","name":"페이지 수 제한이 있나요?","acceptedAnswer":{"@type":"Answer","text":"제한은 없으나 페이지가 많을수록 처리 시간이 길어집니다. 빠른 처리를 위해 10페이지 이내를 권장합니다."}},
+      {"@type":"Question","name":"파일이 서버에 저장되나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 모든 처리가 브라우저에서만 이루어지며 파일이 서버로 전송되지 않습니다."}}
+    ]
+  }
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464921081676309" crossorigin="anonymous"></script>
+  <meta name="theme-color" content="#F97316">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .lang-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .lang-chip {
+      padding: 7px 16px; border-radius: 20px; border: 1.5px solid var(--border);
+      background: white; cursor: pointer; font-size: 0.85rem; font-family: inherit;
+      transition: all 0.15s; color: var(--text); font-weight: 500;
+    }
+    .lang-chip.active { background: var(--primary); border-color: var(--primary); color: white; font-weight: 700; }
+
+    .page-tabs { display: flex; gap: 6px; flex-wrap: wrap; padding: 12px 16px; background: #f9fafb; border: 1px solid var(--border); border-top: none; }
+    .page-tab-btn {
+      padding: 5px 13px; font-size: 0.82rem; font-weight: 500;
+      cursor: pointer; border: 1px solid var(--border); background: #F9FAFB;
+      color: var(--text-light); border-radius: 20px; font-family: inherit; transition: all 0.15s;
+    }
+    .page-tab-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+    .text-tabs { display: flex; border-bottom: 1px solid var(--border); }
+    .text-tab-btn {
+      padding: 10px 20px; font-size: 0.88rem; font-weight: 600; cursor: pointer;
+      border: 1px solid var(--border); background: #F9FAFB; color: var(--text-light);
+      transition: background 0.15s; font-family: inherit; border-bottom: none;
+    }
+    .text-tab-btn:first-child { border-radius: var(--radius-sm) 0 0 0; }
+    .text-tab-btn:last-child { border-radius: 0 var(--radius-sm) 0 0; }
+    .text-tab-btn.active { background: white; color: var(--primary); border-bottom: 2px solid var(--primary); }
+
+    .ocr-output {
+      width: 100%; min-height: 240px; max-height: 480px; padding: 16px;
+      border: 1px solid var(--border); border-top: none; border-radius: 0 0 var(--radius) var(--radius);
+      font-size: 0.9rem; line-height: 1.8; font-family: 'Noto Sans KR', sans-serif;
+      resize: vertical; outline: none; background: white; white-space: pre-wrap;
+      display: block; box-sizing: border-box; overflow-y: auto;
+    }
+    .action-buttons { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+    .btn-action {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 20px; border-radius: var(--radius-sm); font-weight: 600;
+      cursor: pointer; border: none; font-size: 0.9rem; font-family: inherit; transition: background 0.15s;
+    }
+    .btn-copy { background: var(--primary); color: white; }
+    .btn-copy:hover { background: var(--primary-dark); }
+    .btn-txt { background: #22C55E; color: white; }
+    .btn-txt:hover { background: #16A34A; }
+    .btn-reset { background: #F3F4F6; color: var(--text-light); }
+    .btn-reset:hover { background: #E5E7EB; }
+
+    .page-status-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-top: 12px;
+    }
+    .page-status-item {
+      background: #F9FAFB; border: 1px solid var(--border); border-radius: var(--radius-sm);
+      padding: 10px 12px; font-size: 0.8rem; display: flex; align-items: center; gap: 8px;
+    }
+    .page-status-item.done { border-color: #22C55E; background: #F0FDF4; }
+    .page-status-item.processing { border-color: var(--primary); background: #FFF7ED; }
+    .page-status-dot { width: 8px; height: 8px; border-radius: 50%; background: #D1D5DB; flex-shrink: 0; }
+    .page-status-item.done .page-status-dot { background: #22C55E; }
+    .page-status-item.processing .page-status-dot { background: var(--primary); animation: pulse 1s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">WooaOCR</a>
+    <nav>
+      <a href="image-ocr.html">이미지 OCR</a>
+      <a href="pdf-ocr.html" style="background:rgba(255,255,255,0.18);color:white;">PDF OCR</a>
+      <a href="index.html">전체 도구 ›</a>
+    </nav>
+  </div>
+</header>
+
+<div class="our-sites-bar">
+  <span class="our-sites-label">WooaHouse Services</span>
+  <div class="our-sites-links">
+    <a href="https://wooahouse.com/" target="_blank" rel="noopener">🔗 WooaHouse</a>
+    <a href="https://pdfkit.wooahouse.com/" target="_blank" rel="noopener">📄 WooaPDF</a>
+    <a href="https://imagekit.wooahouse.com/" target="_blank" rel="noopener">🖼️ WooaImage</a>
+    <a href="https://colorkit.wooahouse.com/" target="_blank" rel="noopener">🎨 WooaColor</a>
+    <a href="https://textkit.wooahouse.com/" target="_blank" rel="noopener">✏️ WooaText</a>
+    <a href="https://qrkit.wooahouse.com/" target="_blank" rel="noopener">📱 WooaQR</a>
+    <a href="https://calckit.wooahouse.com/" target="_blank" rel="noopener">🧮 WooaCalc</a>
+    <a href="https://fontkit.wooahouse.com/" target="_blank" rel="noopener">🔤 WooaFont</a>
+    <a href="https://mactools.wooahouse.com/" target="_blank" rel="noopener">🍎 WooaMac</a>
+    <a href="https://pctools.wooahouse.com/" target="_blank" rel="noopener">🖥️ WooaPC</a>
+    <a href="https://vskit.wooahouse.com/" target="_blank" rel="noopener">💻 WooaVS</a>
+    <a href="https://ocrkit.wooahouse.com/" target="_blank" rel="noopener" class="active">🔍 WooaOCR</a>
+    <a href="https://wooaaudio.wooahouse.com/" target="_blank" rel="noopener">🎵 WooaAudio</a>
+    <a href="https://wooadev.wooahouse.com/" target="_blank" rel="noopener">🛠️ WooaDev</a>
+  </div>
+</div>
+
+<div class="mobile-top-ad">
+  <ins class="adsbygoogle" style="display:block;width:100%;height:80px" data-ad-client="ca-pub-6464921081676309" data-ad-slot="7080296704" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div class="page-with-sidebar">
+<main class="tool-page">
+
+  <div class="breadcrumb">
+    <a href="index.html">🏠 홈</a>
+    <span>›</span>
+    <span>PDF OCR</span>
+  </div>
+
+  <div class="tool-header">
+    <span class="tool-header-icon">📄</span>
+    <h1>PDF OCR 무료 — 스캔 PDF 텍스트 추출</h1>
+    <p>스캔된 PDF 파일에서 텍스트를 페이지별로 인식합니다. 파일이 서버에 저장되지 않아 안전합니다.</p>
+  </div>
+
+  <!-- 언어 선택 -->
+  <div class="options-panel">
+    <div class="options-title">인식 언어</div>
+    <div class="lang-chips">
+      <button class="lang-chip active" data-lang="kor+eng">한국어 + 영어</button>
+      <button class="lang-chip" data-lang="kor">한국어만</button>
+      <button class="lang-chip" data-lang="eng">영어만</button>
+      <button class="lang-chip" data-lang="jpn">일본어</button>
+      <button class="lang-chip" data-lang="chi_sim">중국어 간체</button>
+    </div>
+  </div>
+
+  <!-- 드롭존 -->
+  <div class="drop-zone" id="dropZone" style="margin-top:16px;">
+    <span class="drop-zone-icon">📄</span>
+    <h3>스캔된 PDF를 여기에 끌어다 놓으세요</h3>
+    <p>텍스트 복사가 안 되는 이미지형 PDF | 최대 50MB</p>
+    <label for="fileInput" class="btn-select">PDF 파일 선택</label>
+    <input type="file" id="fileInput" accept=".pdf,application/pdf" style="display:none">
+  </div>
+
+  <div id="fileInfoPanel" class="file-list-panel" style="display:none;margin-top:16px;">
+    <div class="file-list-title">선택된 파일</div>
+    <div id="fileInfo"></div>
+  </div>
+
+  <div id="errorMsg" class="alert alert-error" style="display:none;margin-top:12px;"></div>
+
+  <!-- 인식 버튼 -->
+  <button class="btn-convert" id="startPdfOcrBtn" style="display:none;">🔍 OCR 시작</button>
+
+  <!-- 진행 상황 -->
+  <div id="progressArea" style="display:none;margin-top:16px;">
+    <div class="progress-wrap" style="display:block;">
+      <div class="progress-label">
+        <span id="progressText">준비 중...</span>
+        <span id="progressPct">0%</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+    <div class="page-status-grid" id="pageStatusGrid"></div>
+  </div>
+
+  <!-- 결과 -->
+  <div id="resultArea" style="display:none;margin-top:24px;">
+    <div class="text-tabs">
+      <button class="text-tab-btn active" id="tabAll">전체</button>
+      <button class="text-tab-btn" id="tabPages">페이지별</button>
+    </div>
+    <div class="page-tabs" id="pageTabsWrap" style="display:none;"></div>
+    <textarea class="ocr-output" id="ocrOutput" spellcheck="false" placeholder="인식된 텍스트가 여기에 표시됩니다..."></textarea>
+    <div class="action-buttons">
+      <button class="btn-action btn-copy" id="copyBtn">📋 전체 복사</button>
+      <button class="btn-action btn-txt" id="downloadBtn">⬇️ TXT 저장</button>
+      <button class="btn-action btn-reset" id="resetBtn">🔄 초기화</button>
+    </div>
+  </div>
+
+  <div class="cross-link-tip" style="margin-top:28px;">
+    💡 텍스트 레이어가 있는 일반 PDF라면 OCR 없이 더 빠르게 추출할 수 있습니다.
+    <a href="https://pdfkit.wooahouse.com/pdf-text-extract.html" target="_blank" rel="noopener">WooaPDF 텍스트 추출 →</a>
+  </div>
+
+  <div class="cross-link-banner" style="margin-top:16px;">
+    <span>🖼️ 이미지 파일에서 텍스트를 추출하려면?</span>
+    <a href="image-ocr.html">이미지 OCR 바로가기 →</a>
+  </div>
+
+  <!-- FAQ -->
+  <section style="margin-top:40px;">
+    <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:16px;">자주 묻는 질문</h2>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 일반 PDF와 스캔 PDF의 차이는?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">일반 PDF는 텍스트 레이어가 있어 복사가 가능합니다. 스캔 PDF는 이미지로만 구성되어 OCR이 필요합니다. 복사가 안 된다면 스캔 PDF입니다.</div>
+      </div>
+      <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 페이지 수 제한이 있나요?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">제한은 없으나 페이지가 많을수록 처리 시간이 길어집니다. 빠른 처리를 위해 10페이지 이내를 권장합니다.</div>
+      </div>
+      <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 파일이 서버에 저장되나요?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">아니요. 모든 처리가 브라우저에서만 이루어지며 파일이 서버로 전송되지 않습니다.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<aside class="tool-sidebar">
+  <div class="ad-card">
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:250px" data-ad-client="ca-pub-6464921081676309" data-ad-slot="1419180025" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  <div class="ad-card" style="margin-top:16px;overflow:hidden;">
+    <script src="https://ads-partners.coupang.com/g.js"></script>
+    <script>new PartnersCoupang.G({"id":986943,"template":"carousel","trackingCode":"AF5600192","width":"160","height":"200","tsource":""});</script>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p>© 2026 WooaOCR by WooaHouse. 모든 권리 보유.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="about.html">소개</a>
+        <a href="index.html">홈</a>
+      </div>
+    </div>
+    <p class="coupang-notice">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<script>
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+  let selectedFile = null;
+  let selectedLang = 'kor+eng';
+  let allPageTexts = [];
+  let currentView = 'all';
+  let currentPageIdx = 0;
+
+  // 언어 칩
+  document.querySelectorAll('.lang-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.lang-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      selectedLang = chip.dataset.lang;
+    });
+  });
+
+  // 드롭존
+  const dropZone = document.getElementById('dropZone');
+  dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+  dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+  dropZone.addEventListener('drop', e => {
+    e.preventDefault(); dropZone.classList.remove('drag-over');
+    if (e.dataTransfer.files[0]) loadFile(e.dataTransfer.files[0]);
+  });
+  dropZone.addEventListener('click', () => document.getElementById('fileInput').click());
+  document.getElementById('fileInput').addEventListener('change', e => {
+    if (e.target.files[0]) loadFile(e.target.files[0]);
+  });
+
+  function loadFile(file) {
+    if (file.type !== 'application/pdf' && !file.name.endsWith('.pdf')) {
+      showError('PDF 파일만 업로드할 수 있습니다.'); return;
+    }
+    if (file.size > 50 * 1024 * 1024) {
+      showError('파일 크기가 50MB를 초과합니다.'); return;
+    }
+    hideError();
+    selectedFile = file;
+    allPageTexts = [];
+    document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('progressArea').style.display = 'none';
+    document.getElementById('fileInfo').innerHTML = `
+      <div class="file-item">
+        <span class="file-item-icon">📄</span>
+        <div class="file-item-info">
+          <div class="file-item-name">${file.name}</div>
+          <div class="file-item-size">${formatSize(file.size)}</div>
+        </div>
+      </div>`;
+    document.getElementById('fileInfoPanel').style.display = 'block';
+    document.getElementById('startPdfOcrBtn').style.display = 'block';
+  }
+
+  document.getElementById('startPdfOcrBtn').addEventListener('click', startPdfOcr);
+
+  async function startPdfOcr() {
+    if (!selectedFile) return;
+    const btn = document.getElementById('startPdfOcrBtn');
+    btn.disabled = true;
+    btn.textContent = '처리 중...';
+    document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('progressArea').style.display = 'block';
+    hideError();
+    allPageTexts = [];
+
+    try {
+      const arrayBuffer = await selectedFile.arrayBuffer();
+      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+      const numPages = pdf.numPages;
+
+      // 페이지 상태 그리드 생성
+      const grid = document.getElementById('pageStatusGrid');
+      grid.innerHTML = '';
+      for (let i = 0; i < numPages; i++) {
+        const item = document.createElement('div');
+        item.className = 'page-status-item';
+        item.id = 'pageStatus_' + i;
+        item.innerHTML = '<div class="page-status-dot"></div><span>페이지 ' + (i+1) + '</span>';
+        grid.appendChild(item);
+      }
+
+      // PDF.js로 각 페이지 렌더링 → Tesseract.js OCR
+      for (let i = 0; i < numPages; i++) {
+        updateProgress(Math.round((i / numPages) * 90), `페이지 ${i+1}/${numPages} 처리 중...`);
+
+        // 현재 페이지 처리 중 표시
+        const statusEl = document.getElementById('pageStatus_' + i);
+        if (statusEl) statusEl.classList.add('processing');
+
+        // PDF 페이지를 canvas로 렌더링
+        const page = await pdf.getPage(i + 1);
+        const scale = 2.0; // 고해상도로 렌더링하여 OCR 정확도 향상
+        const viewport = page.getViewport({ scale });
+        const canvas = document.createElement('canvas');
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        const ctx = canvas.getContext('2d');
+        await page.render({ canvasContext: ctx, viewport }).promise;
+
+        // Tesseract OCR
+        const { data: { text } } = await Tesseract.recognize(canvas, selectedLang);
+        allPageTexts.push(text.trim());
+
+        // 완료 표시
+        if (statusEl) { statusEl.classList.remove('processing'); statusEl.classList.add('done'); }
+      }
+
+      updateProgress(100, '인식 완료!');
+
+      // 결과 표시
+      const allText = allPageTexts.map((t, i) => `=== 페이지 ${i+1} ===\n${t}`).join('\n\n');
+      document.getElementById('ocrOutput').value = allText;
+
+      // 페이지별 탭 버튼 생성
+      const pageTabsWrap = document.getElementById('pageTabsWrap');
+      pageTabsWrap.innerHTML = '';
+      for (let i = 0; i < numPages; i++) {
+        const btn = document.createElement('button');
+        btn.className = 'page-tab-btn' + (i === 0 ? ' active' : '');
+        btn.textContent = String(i + 1);
+        btn.addEventListener('click', () => showPage(i));
+        pageTabsWrap.appendChild(btn);
+      }
+
+      document.getElementById('resultArea').style.display = 'block';
+      document.getElementById('progressArea').style.display = 'none';
+      document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
+
+    } catch (err) {
+      console.error(err);
+      showError('처리 중 오류가 발생했습니다: ' + err.message);
+      document.getElementById('progressArea').style.display = 'none';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = '🔍 OCR 시작';
+    }
+  }
+
+  // 탭 전환
+  document.getElementById('tabAll').addEventListener('click', () => {
+    currentView = 'all';
+    document.getElementById('tabAll').classList.add('active');
+    document.getElementById('tabPages').classList.remove('active');
+    document.getElementById('pageTabsWrap').style.display = 'none';
+    const allText = allPageTexts.map((t, i) => `=== 페이지 ${i+1} ===\n${t}`).join('\n\n');
+    document.getElementById('ocrOutput').value = allText;
+  });
+
+  document.getElementById('tabPages').addEventListener('click', () => {
+    currentView = 'pages';
+    document.getElementById('tabPages').classList.add('active');
+    document.getElementById('tabAll').classList.remove('active');
+    document.getElementById('pageTabsWrap').style.display = 'flex';
+    showPage(currentPageIdx);
+  });
+
+  function showPage(idx) {
+    currentPageIdx = idx;
+    document.getElementById('ocrOutput').value = allPageTexts[idx] || '(텍스트 없음)';
+    document.querySelectorAll('.page-tab-btn').forEach((btn, i) => {
+      btn.classList.toggle('active', i === idx);
+    });
+  }
+
+  // 복사
+  document.getElementById('copyBtn').addEventListener('click', () => {
+    const text = document.getElementById('ocrOutput').value;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.getElementById('copyBtn');
+      btn.textContent = '✅ 복사됨!';
+      setTimeout(() => btn.textContent = '📋 전체 복사', 2000);
+    });
+  });
+
+  // TXT 저장
+  document.getElementById('downloadBtn').addEventListener('click', () => {
+    const text = allPageTexts.map((t, i) => `=== 페이지 ${i+1} ===\n${t}`).join('\n\n');
+    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = (selectedFile ? selectedFile.name.replace('.pdf', '') : 'pdf-ocr') + '.txt';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  // 초기화
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    selectedFile = null;
+    allPageTexts = [];
+    document.getElementById('fileInfoPanel').style.display = 'none';
+    document.getElementById('startPdfOcrBtn').style.display = 'none';
+    document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('progressArea').style.display = 'none';
+    document.getElementById('fileInput').value = '';
+    document.getElementById('pageTabsWrap').innerHTML = '';
+    hideError();
+  });
+
+  function updateProgress(pct, text) {
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressText').textContent = text;
+    document.getElementById('progressPct').textContent = pct + '%';
+  }
+  function showError(msg) { const el = document.getElementById('errorMsg'); el.textContent = msg; el.style.display = 'block'; }
+  function hideError() { document.getElementById('errorMsg').style.display = 'none'; }
+  function formatSize(b) {
+    if (b < 1024) return b + ' B';
+    if (b < 1024*1024) return (b/1024).toFixed(1) + ' KB';
+    return (b/(1024*1024)).toFixed(1) + ' MB';
+  }
+</script>
+<script src="js/pwa-install.js"></script>
+</body>
+</html>

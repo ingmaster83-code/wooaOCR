@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ocrkit.wooahouse.com/sitemap.xml
