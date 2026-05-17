@@ -1,8 +1,8 @@
-# OCRKit 프로젝트 지침
+﻿# OCRKit 프로젝트 지침
 
 ## 프로젝트 개요
 - **사이트명:** WooaOCR
-- **URL:** https://ocrkit.wooahouse.com
+- **URL:** https://wooaocr.wooahouse.com
 - **배포:** GitHub Pages (main 브랜치 → root)
 - **테마 컬러:** #F97316 (orange)
 
