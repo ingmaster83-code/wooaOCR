@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -13,23 +13,23 @@
   <meta name="naver-site-verification" content="7396a327607b884b9bef1283dfd3a5c6115a2b50">
   <meta name="google-site-verification" content="tNM8tmr_6DFold03YSScWz4KEtu5Zo0Fsqc03u5Afms">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>이미지 텍스트 추출 무료 — 사진 OCR 온라인 | WooaOCR</title>
-  <meta name="description" content="JPG·PNG·WebP 이미지에서 텍스트를 무료로 추출. 한국어·영어·일본어 OCR 지원. 파일이 서버에 저장되지 않아 100% 안전합니다.">
-  <meta name="keywords" content="이미지 텍스트 추출, 사진 OCR, 온라인 OCR 무료, 이미지 글자 인식, JPG 텍스트 추출, 한국어 OCR, WooaOCR">
+  <title>명함 OCR 무료 — 명함 사진에서 연락처 자동 추출 | WooaOCR</title>
+  <meta name="description" content="명함 사진을 업로드하면 이름·전화번호·이메일·회사·주소를 자동으로 인식하고 추출합니다. 무료 온라인 명함 스캔.">
+  <meta name="keywords" content="명함 OCR, 명함 스캔, 명함 인식, 명함 연락처 추출, 명함 사진 텍스트, 온라인 명함 인식, WooaOCR">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://wooaocr.wooahouse.com/image-ocr.html">
-  <meta property="og:title" content="이미지 텍스트 추출 무료 — 사진 OCR | WooaOCR">
-  <meta property="og:description" content="JPG·PNG·WebP 이미지에서 텍스트를 무료로 추출. 한국어·영어·일본어 OCR 지원.">
+  <link rel="canonical" href="https://wooaocr.wooahouse.com/business-card-ocr.html">
+  <meta property="og:title" content="명함 OCR 무료 — 명함 사진에서 연락처 자동 추출 | WooaOCR">
+  <meta property="og:description" content="명함 사진을 업로드하면 이름·전화번호·이메일·회사·주소를 자동으로 인식하고 추출합니다. 무료 온라인 명함 스캔.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://wooaocr.wooahouse.com/image-ocr.html">
+  <meta property="og:url" content="https://wooaocr.wooahouse.com/business-card-ocr.html">
   <meta property="og:locale" content="ko_KR">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "이미지 텍스트 추출 | WooaOCR",
-    "url": "https://wooaocr.wooahouse.com/image-ocr.html",
-    "description": "JPG·PNG·WebP 이미지에서 텍스트를 무료로 추출하는 온라인 OCR 도구",
+    "name": "명함 OCR | WooaOCR",
+    "url": "https://wooaocr.wooahouse.com/business-card-ocr.html",
+    "description": "명함 사진을 업로드하면 이름·전화번호·이메일·회사명·주소를 자동으로 인식하는 무료 온라인 명함 스캔 도구",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Web",
     "isAccessibleForFree": true,
@@ -41,9 +41,9 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"어떤 이미지 형식을 지원하나요?","acceptedAnswer":{"@type":"Answer","text":"JPG, PNG, WebP, BMP, GIF 등 대부분의 이미지 형식을 지원합니다."}},
-      {"@type":"Question","name":"파일이 서버에 업로드되나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 모든 처리가 브라우저에서만 이루어지며 파일이 서버로 전송되지 않습니다."}},
-      {"@type":"Question","name":"어떤 언어를 인식할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"한국어, 영어, 일본어, 중국어 간체를 지원합니다. 복합 선택도 가능합니다."}}
+      {"@type":"Question","name":"인식이 잘 안 될 때는?","acceptedAnswer":{"@type":"Answer","text":"밝고 평평하게 촬영하고 해상도가 높을수록 인식 정확도가 올라갑니다."}},
+      {"@type":"Question","name":"영문 명함도 인식되나요?","acceptedAnswer":{"@type":"Answer","text":"네, 한국어+영어 혼합 인식을 지원합니다."}},
+      {"@type":"Question","name":"파싱이 틀릴 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"자동 파싱이라 명함 형식에 따라 오류가 있을 수 있습니다. 원본 OCR 텍스트를 참고하세요."}}
     ]
   }
   </script>
@@ -52,35 +52,24 @@
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .lang-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
-    .lang-chip {
-      padding: 7px 16px; border-radius: 20px; border: 1.5px solid var(--border);
-      background: white; cursor: pointer; font-size: 0.85rem; font-family: inherit;
-      transition: all 0.15s; color: var(--text); font-weight: 500;
-    }
-    .lang-chip.active { background: var(--primary); border-color: var(--primary); color: white; font-weight: 700; }
     .image-preview-wrap {
       margin-top: 16px; border-radius: var(--radius); overflow: hidden;
       border: 1px solid var(--border); background: #F9FAFB; text-align: center; padding: 12px;
     }
     .image-preview-wrap img { max-width: 100%; max-height: 300px; object-fit: contain; border-radius: var(--radius-sm); }
     .ocr-output {
-      width: 100%; min-height: 200px; max-height: 400px; padding: 16px;
-      border: 1px solid var(--border); border-radius: 0 0 var(--radius) var(--radius);
+      width: 100%; min-height: 120px; padding: 16px;
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
       font-size: 0.9rem; line-height: 1.8; font-family: 'Noto Sans KR', sans-serif;
       resize: vertical; outline: none; background: white; white-space: pre-wrap; overflow-y: auto;
-      display: block; box-sizing: border-box;
+      display: block; box-sizing: border-box; margin-top: 8px;
     }
-    .result-tabs { display: flex; border-bottom: 2px solid var(--border); margin-bottom: 0; }
-    .result-tab {
-      padding: 10px 20px; font-size: 0.88rem; font-weight: 600; cursor: pointer;
-      border: none; background: #F9FAFB; color: var(--text-light); font-family: inherit;
-      border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.15s;
-    }
-    .result-tab.active { color: var(--primary); border-bottom-color: var(--primary); background: white; }
-    .confidence-bar { margin-top: 8px; display: flex; align-items: center; gap: 10px; font-size: 0.82rem; color: var(--text-light); }
-    .confidence-track { flex: 1; height: 6px; background: #E5E7EB; border-radius: 99px; overflow: hidden; }
-    .confidence-fill { height: 100%; border-radius: 99px; background: #22C55E; transition: width 0.4s; }
+    .card-fields { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+    .card-field { display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #FFF7ED; border-radius: var(--radius-sm); border: 1px solid #FED7AA; }
+    .field-label { font-size: 0.82rem; color: var(--text-light); width: 90px; flex-shrink: 0; }
+    .field-value { flex: 1; font-size: 0.92rem; font-weight: 600; color: var(--text); word-break: break-all; }
+    .btn-field-copy { padding: 5px 12px; background: var(--primary); color: white; border: none; border-radius: 6px; font-size: 0.78rem; cursor: pointer; flex-shrink: 0; font-family: inherit; transition: background 0.15s; }
+    .btn-field-copy:hover { background: var(--primary-dark); }
     .action-buttons { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
     .btn-action {
       display: inline-flex; align-items: center; gap: 6px;
@@ -101,8 +90,9 @@
   <div class="header-inner">
     <a href="index.html" class="logo">WooaOCR</a>
     <nav>
-      <a href="image-ocr.html" style="background:rgba(255,255,255,0.18);color:white;">이미지 OCR</a>
+      <a href="image-ocr.html">이미지 OCR</a>
       <a href="pdf-ocr.html">PDF OCR</a>
+      <a href="business-card-ocr.html" style="background:rgba(255,255,255,0.18);color:white;">명함 OCR</a>
       <a href="index.html">전체 도구 ›</a>
     </nav>
   </div>
@@ -139,52 +129,40 @@
   <div class="breadcrumb">
     <a href="index.html">🏠 홈</a>
     <span>›</span>
-    <span>이미지 텍스트 추출</span>
+    <span>명함 OCR</span>
   </div>
 
   <div class="tool-header">
-    <span class="tool-header-icon">🖼️</span>
-    <h1>이미지 텍스트 추출 무료 — 사진 OCR</h1>
-    <p>JPG·PNG·WebP 이미지에서 텍스트를 인식합니다. 파일이 서버에 저장되지 않아 안전합니다.</p>
-  </div>
-
-  <!-- 언어 선택 -->
-  <div class="options-panel">
-    <div class="options-title">인식 언어</div>
-    <div class="lang-chips">
-      <button class="lang-chip active" data-lang="kor+eng">한국어 + 영어</button>
-      <button class="lang-chip" data-lang="kor">한국어만</button>
-      <button class="lang-chip" data-lang="eng">영어만</button>
-      <button class="lang-chip" data-lang="jpn">일본어</button>
-      <button class="lang-chip" data-lang="chi_sim">중국어 간체</button>
-    </div>
+    <span class="tool-header-icon">💼</span>
+    <h1>명함 OCR — 명함 사진에서 연락처 자동 추출</h1>
+    <p>명함 사진을 업로드하면 이름·전화번호·이메일·회사명·주소를 자동으로 인식합니다.</p>
   </div>
 
   <!-- 드롭존 -->
   <div class="drop-zone" id="dropZone" style="margin-top:16px;">
-    <span class="drop-zone-icon">🖼️</span>
-    <h3>이미지를 여기에 끌어다 놓으세요</h3>
+    <span class="drop-zone-icon">💼</span>
+    <h3>명함 이미지를 여기에 끌어다 놓으세요</h3>
     <p>JPG · PNG · WebP · BMP 지원 | 최대 20MB</p>
-    <label for="fileInput" class="btn-select">이미지 파일 선택</label>
+    <label for="fileInput" class="btn-select">명함 이미지 파일 선택</label>
     <input type="file" id="fileInput" accept="image/*" style="display:none">
   </div>
 
   <div style="margin-top:14px;padding:14px 16px;background:#FFF7ED;border-radius:10px;border:1px solid #FED7AA;font-size:0.83rem;line-height:1.8;color:#78350F;">
     <div style="font-weight:700;margin-bottom:6px;">✅ 잘 인식되는 경우</div>
-    <div>📄 인쇄된 문서·스캔본 &nbsp;|&nbsp; 📰 뉴스·책 페이지 &nbsp;|&nbsp; 📊 표·스프레드시트 &nbsp;|&nbsp; 📸 선명한 고해상도 사진</div>
+    <div>💼 정면에서 평평하게 촬영한 명함 &nbsp;|&nbsp; 🖨️ 흰 배경에 검은 글씨 명함 &nbsp;|&nbsp; 📸 밝은 조명 아래 선명한 사진</div>
     <div style="font-weight:700;margin-top:10px;margin-bottom:6px;">⚠️ 인식률이 낮은 경우</div>
-    <div>🎨 색상 배경 위 글자 &nbsp;|&nbsp; 🔤 흐리거나 기울어진 텍스트 &nbsp;|&nbsp; 📷 저해상도·흔들린 사진</div>
+    <div>🎨 그라데이션·어두운 배경 명함 &nbsp;|&nbsp; 🔤 아주 작거나 장식체 폰트 &nbsp;|&nbsp; 📷 기울어지거나 반사광 있는 사진 &nbsp;|&nbsp; 🌑 저조도 환경 촬영</div>
   </div>
 
   <!-- 이미지 미리보기 -->
   <div id="previewWrap" class="image-preview-wrap" style="display:none;">
-    <img id="previewImg" src="" alt="미리보기">
+    <img id="previewImg" src="" alt="명함 미리보기">
   </div>
 
   <div id="errorMsg" class="alert alert-error" style="display:none;margin-top:12px;"></div>
 
   <!-- 인식 버튼 -->
-  <button class="btn-convert" id="startOcrBtn" style="display:none;">🔍 텍스트 인식 시작</button>
+  <button class="btn-convert" id="startOcrBtn" style="display:none;">🔍 명함 인식 시작</button>
 
   <!-- 진행바 -->
   <div class="progress-wrap" id="progressWrap">
@@ -197,41 +175,50 @@
 
   <!-- 결과 -->
   <div id="resultArea" style="display:none;margin-top:24px;">
-    <div class="result-tabs">
-      <button class="result-tab active" id="tabText">📝 추출된 텍스트</button>
-      <button class="result-tab" id="tabInfo">ℹ️ 인식 정보</button>
-    </div>
-    <div id="panelText">
-      <textarea class="ocr-output" id="ocrOutput" spellcheck="false" placeholder="인식된 텍스트가 여기에 표시됩니다..."></textarea>
-    </div>
-    <div id="panelInfo" style="display:none; padding:16px; background:white; border:1px solid var(--border); border-top:none; border-radius:0 0 var(--radius) var(--radius);">
-      <div style="font-size:0.88rem; color:var(--text-light); line-height:2;">
-        <div>📄 <strong>파일명:</strong> <span id="infoFilename">—</span></div>
-        <div>📐 <strong>해상도:</strong> <span id="infoSize">—</span></div>
-        <div>🔤 <strong>인식 언어:</strong> <span id="infoLang">—</span></div>
-        <div>✅ <strong>신뢰도:</strong> <span id="infoConf">—</span></div>
+    <div class="card-fields">
+      <div class="card-field">
+        <div class="field-label">👤 이름</div>
+        <div class="field-value" id="fieldName">—</div>
+        <button class="btn-field-copy" data-target="fieldName">복사</button>
       </div>
-      <div class="confidence-bar" style="margin-top:12px;">
-        <span style="font-size:0.82rem;color:var(--text-light);white-space:nowrap;">신뢰도</span>
-        <div class="confidence-track"><div class="confidence-fill" id="confFill" style="width:0%;"></div></div>
-        <span id="confPct" style="font-size:0.82rem;font-weight:700;color:var(--text-light);">0%</span>
+      <div class="card-field">
+        <div class="field-label">📞 전화번호</div>
+        <div class="field-value" id="fieldPhone">—</div>
+        <button class="btn-field-copy" data-target="fieldPhone">복사</button>
+      </div>
+      <div class="card-field">
+        <div class="field-label">✉️ 이메일</div>
+        <div class="field-value" id="fieldEmail">—</div>
+        <button class="btn-field-copy" data-target="fieldEmail">복사</button>
+      </div>
+      <div class="card-field">
+        <div class="field-label">🏢 회사명</div>
+        <div class="field-value" id="fieldCompany">—</div>
+        <button class="btn-field-copy" data-target="fieldCompany">복사</button>
+      </div>
+      <div class="card-field">
+        <div class="field-label">📍 주소</div>
+        <div class="field-value" id="fieldAddress">—</div>
+        <button class="btn-field-copy" data-target="fieldAddress">복사</button>
       </div>
     </div>
+
+    <!-- 원본 OCR 텍스트 (접기/펼치기) -->
+    <details style="margin-top:16px;">
+      <summary style="cursor:pointer;font-size:0.88rem;color:var(--text-light);">원본 OCR 텍스트 보기</summary>
+      <textarea class="ocr-output" id="ocrOutput" spellcheck="false" style="min-height:120px;margin-top:8px;"></textarea>
+    </details>
+
     <div class="action-buttons">
-      <button class="btn-action btn-copy" id="copyBtn">📋 복사</button>
+      <button class="btn-action btn-copy" id="copyBtn">📋 전체 복사</button>
       <button class="btn-action btn-txt" id="downloadBtn">⬇️ TXT 저장</button>
       <button class="btn-action btn-reset" id="resetBtn">🔄 초기화</button>
     </div>
   </div>
 
-  <div class="cross-link-tip" style="margin-top:28px;">
-    💡 텍스트 레이어가 있는 PDF는 OCR 없이 추출 가능합니다.
-    <a href="https://pdfkit.wooahouse.com/pdf-text-extract.html" target="_blank" rel="noopener">WooaPDF 텍스트 추출 →</a>
-  </div>
-
-  <div class="cross-link-banner" style="margin-top:16px;">
-    <span>📄 스캔된 PDF에서 텍스트를 추출하려면?</span>
-    <a href="pdf-ocr.html">PDF OCR 바로가기 →</a>
+  <div class="cross-link-banner" style="margin-top:28px;">
+    <span>🖼️ 일반 이미지에서 텍스트를 추출하려면?</span>
+    <a href="image-ocr.html">이미지 OCR 바로가기 →</a>
   </div>
 
   <!-- FAQ -->
@@ -239,16 +226,16 @@
     <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:16px;">자주 묻는 질문</h2>
     <div style="display:flex;flex-direction:column;gap:10px;">
       <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
-        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 어떤 이미지 형식을 지원하나요?</div>
-        <div style="color:var(--text-light);font-size:0.88rem;">JPG, PNG, WebP, BMP, GIF 등 대부분의 이미지 형식을 지원합니다.</div>
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 인식이 잘 안 될 때는?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">밝고 평평하게 촬영하고, 해상도가 높을수록 인식 정확도가 올라갑니다.</div>
       </div>
       <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
-        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 파일이 서버에 업로드되나요?</div>
-        <div style="color:var(--text-light);font-size:0.88rem;">아니요. 모든 처리가 브라우저에서만 이루어지며 파일이 서버로 전송되지 않습니다.</div>
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 영문 명함도 인식되나요?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">네, 한국어+영어 혼합 인식을 지원합니다.</div>
       </div>
       <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
-        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 인식 정확도가 낮을 때는 어떻게 하나요?</div>
-        <div style="color:var(--text-light);font-size:0.88rem;">이미지 해상도가 높을수록 정확도가 올라갑니다. 흐리거나 기울어진 이미지는 정확도가 낮을 수 있습니다.</div>
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 파싱이 틀릴 수 있나요?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">자동 파싱이라 명함 형식에 따라 오류가 있을 수 있습니다. 원본 OCR 텍스트를 참고하세요.</div>
       </div>
     </div>
   </section>
@@ -284,17 +271,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
 <script>
   let selectedFile = null;
-  let selectedLang = 'kor+eng';
-  let ocrResult = null;
-
-  // 언어 칩 선택
-  document.querySelectorAll('.lang-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      document.querySelectorAll('.lang-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      selectedLang = chip.dataset.lang;
-    });
-  });
+  const FIXED_LANG = 'kor+eng';
 
   // 드롭존
   const dropZone = document.getElementById('dropZone');
@@ -318,7 +295,6 @@
     }
     hideError();
     selectedFile = file;
-    ocrResult = null;
     document.getElementById('resultArea').style.display = 'none';
     document.getElementById('progressWrap').style.display = 'none';
 
@@ -333,38 +309,6 @@
 
   document.getElementById('startOcrBtn').addEventListener('click', startOcr);
 
-  // 이미지 전처리: 2x 업스케일 + 대비 강화
-  async function prepareCanvas(file) {
-    return new Promise((resolve, reject) => {
-      const img = new Image();
-      const url = URL.createObjectURL(file);
-      img.onload = () => {
-        const scale = img.naturalWidth < 1000 ? 2 : 1; // 소형 이미지만 업스케일
-        const canvas = document.createElement('canvas');
-        canvas.width = img.naturalWidth * scale;
-        canvas.height = img.naturalHeight * scale;
-        const ctx = canvas.getContext('2d');
-        ctx.imageSmoothingEnabled = true;
-        ctx.imageSmoothingQuality = 'high';
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-        URL.revokeObjectURL(url);
-        // 대비 강화
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-        const d = imageData.data;
-        const factor = (259 * (1.25 * 255 + 255)) / (255 * (259 - 1.25 * 255));
-        for (let i = 0; i < d.length; i += 4) {
-          d[i]   = Math.min(255, Math.max(0, factor * (d[i]   - 128) + 128));
-          d[i+1] = Math.min(255, Math.max(0, factor * (d[i+1] - 128) + 128));
-          d[i+2] = Math.min(255, Math.max(0, factor * (d[i+2] - 128) + 128));
-        }
-        ctx.putImageData(imageData, 0, 0);
-        resolve(canvas);
-      };
-      img.onerror = reject;
-      img.src = url;
-    });
-  }
-
   async function startOcr() {
     if (!selectedFile) return;
     document.getElementById('startOcrBtn').disabled = true;
@@ -376,10 +320,7 @@
     updateProgress(0, 'OCR 엔진 초기화 중...');
 
     try {
-      updateProgress(3, '이미지 전처리 중...');
-      const ocrTarget = await prepareCanvas(selectedFile);
-
-      const { data } = await Tesseract.recognize(ocrTarget, selectedLang, {
+      const { data } = await Tesseract.recognize(selectedFile, FIXED_LANG, {
         logger: m => {
           if (m.status === 'recognizing text') {
             updateProgress(Math.round(m.progress * 100), `텍스트 인식 중... ${Math.round(m.progress * 100)}%`);
@@ -395,23 +336,16 @@
 
       updateProgress(100, '인식 완료!');
       document.getElementById('progressWrap').style.display = 'none';
-      ocrResult = data;
 
-      document.getElementById('ocrOutput').value = data.text.trim();
+      const rawText = data.text.trim();
+      document.getElementById('ocrOutput').value = rawText;
 
-      // 신뢰도 계산
-      const conf = Math.round(data.confidence);
-      document.getElementById('confFill').style.width = conf + '%';
-      document.getElementById('confFill').style.background = conf >= 70 ? '#22C55E' : conf >= 40 ? '#F59E0B' : '#EF4444';
-      document.getElementById('confPct').textContent = conf + '%';
-      document.getElementById('confPct').style.color = conf >= 70 ? '#16A34A' : conf >= 40 ? '#D97706' : '#DC2626';
-
-      // 정보 탭
-      const img = document.getElementById('previewImg');
-      document.getElementById('infoFilename').textContent = selectedFile.name;
-      document.getElementById('infoSize').textContent = img.naturalWidth + ' × ' + img.naturalHeight + ' px';
-      document.getElementById('infoLang').textContent = selectedLang.replace(/\+/g, ' + ');
-      document.getElementById('infoConf').textContent = conf + '%';
+      const parsed = parseBusinessCard(rawText);
+      setField('fieldName', parsed.name);
+      setField('fieldPhone', parsed.phone);
+      setField('fieldEmail', parsed.email);
+      setField('fieldCompany', parsed.company);
+      setField('fieldAddress', parsed.address);
 
       document.getElementById('resultArea').style.display = 'block';
       document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
@@ -422,42 +356,102 @@
       document.getElementById('progressWrap').style.display = 'none';
     } finally {
       document.getElementById('startOcrBtn').disabled = false;
-      document.getElementById('startOcrBtn').textContent = '🔍 텍스트 인식 시작';
+      document.getElementById('startOcrBtn').textContent = '🔍 명함 인식 시작';
     }
   }
 
-  // 탭 전환
-  document.getElementById('tabText').addEventListener('click', () => {
-    document.getElementById('tabText').classList.add('active');
-    document.getElementById('tabInfo').classList.remove('active');
-    document.getElementById('panelText').style.display = 'block';
-    document.getElementById('panelInfo').style.display = 'none';
-  });
-  document.getElementById('tabInfo').addEventListener('click', () => {
-    document.getElementById('tabInfo').classList.add('active');
-    document.getElementById('tabText').classList.remove('active');
-    document.getElementById('panelInfo').style.display = 'block';
-    document.getElementById('panelText').style.display = 'none';
-  });
+  function parseBusinessCard(text) {
+    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
 
-  // 복사
-  document.getElementById('copyBtn').addEventListener('click', () => {
-    const text = document.getElementById('ocrOutput').value;
-    navigator.clipboard.writeText(text).then(() => {
-      const btn = document.getElementById('copyBtn');
-      btn.textContent = '✅ 복사됨!';
-      setTimeout(() => btn.textContent = '📋 복사', 2000);
+    // Email: standard regex
+    const emailMatch = text.match(/[\w.+-]+@[\w-]+\.[a-zA-Z]{2,}/);
+    const email = emailMatch ? emailMatch[0] : '';
+
+    // Phone: Korean phone patterns
+    const phoneMatch = text.match(/(?:0\d{1,2}[-.\s]?\d{3,4}[-.\s]?\d{4}|\+82[-.\s]?\d{1,2}[-.\s]?\d{3,4}[-.\s]?\d{4})/);
+    const phone = phoneMatch ? phoneMatch[0] : '';
+
+    // Address: lines containing 시/구/동/로/길/번지/층
+    const addrLine = lines.find(l => /[시구동로길번지층]/.test(l) && l.length > 8);
+    const address = addrLine || '';
+
+    // Company: lines with (주)/(유)/Corp/Inc/Co. or ending in 회사/기업/그룹/Inc
+    const companyLine = lines.find(l => /주식회사|\(주\)|\(유\)|Corp|Inc|Co\.|그룹|기업|컴퍼니/.test(l));
+    const company = companyLine || '';
+
+    // Name: short line (2-10 chars Korean or similar), not phone/email/address/company
+    const usedLines = new Set([email, phone, address, company].filter(Boolean));
+    const nameLine = lines.find(l =>
+      l.length >= 2 && l.length <= 10 &&
+      /^[가-힣a-zA-Z\s]+$/.test(l) &&
+      !usedLines.has(l) &&
+      !/\d{3}/.test(l)
+    );
+    const name = nameLine || '';
+
+    return { name, phone, email, company, address };
+  }
+
+  function setField(id, value) {
+    const el = document.getElementById(id);
+    el.textContent = value || '—';
+  }
+
+  // 개별 필드 복사 버튼
+  document.querySelectorAll('.btn-field-copy').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.dataset.target;
+      const text = document.getElementById(targetId).textContent;
+      if (!text || text === '—') return;
+      navigator.clipboard.writeText(text).then(() => {
+        const orig = btn.textContent;
+        btn.textContent = '✅';
+        setTimeout(() => btn.textContent = orig, 1500);
+      });
     });
   });
 
-  // TXT 다운로드
+  // 전체 복사
+  document.getElementById('copyBtn').addEventListener('click', () => {
+    const fields = [
+      { label: '이름', id: 'fieldName' },
+      { label: '전화번호', id: 'fieldPhone' },
+      { label: '이메일', id: 'fieldEmail' },
+      { label: '회사명', id: 'fieldCompany' },
+      { label: '주소', id: 'fieldAddress' }
+    ];
+    const lines = fields
+      .map(f => {
+        const val = document.getElementById(f.id).textContent;
+        return val && val !== '—' ? `${f.label}: ${val}` : null;
+      })
+      .filter(Boolean);
+    navigator.clipboard.writeText(lines.join('\n')).then(() => {
+      const btn = document.getElementById('copyBtn');
+      btn.textContent = '✅ 복사됨!';
+      setTimeout(() => btn.textContent = '📋 전체 복사', 2000);
+    });
+  });
+
+  // TXT 저장
   document.getElementById('downloadBtn').addEventListener('click', () => {
-    const text = document.getElementById('ocrOutput').value;
-    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+    const fields = [
+      { label: '이름', id: 'fieldName' },
+      { label: '전화번호', id: 'fieldPhone' },
+      { label: '이메일', id: 'fieldEmail' },
+      { label: '회사명', id: 'fieldCompany' },
+      { label: '주소', id: 'fieldAddress' }
+    ];
+    const lines = fields.map(f => {
+      const val = document.getElementById(f.id).textContent;
+      return `${f.label}: ${val !== '—' ? val : ''}`;
+    });
+    lines.push('', '--- 원본 OCR 텍스트 ---', document.getElementById('ocrOutput').value);
+    const blob = new Blob([lines.join('\n')], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = (selectedFile ? selectedFile.name.replace(/\.[^.]+$/, '') : 'ocr-result') + '.txt';
+    a.download = (selectedFile ? selectedFile.name.replace(/\.[^.]+$/, '') : 'business-card') + '-ocr.txt';
     a.click();
     URL.revokeObjectURL(url);
   });
@@ -465,13 +459,16 @@
   // 초기화
   document.getElementById('resetBtn').addEventListener('click', () => {
     selectedFile = null;
-    ocrResult = null;
     document.getElementById('previewWrap').style.display = 'none';
     document.getElementById('previewImg').src = '';
     document.getElementById('startOcrBtn').style.display = 'none';
     document.getElementById('resultArea').style.display = 'none';
     document.getElementById('progressWrap').style.display = 'none';
     document.getElementById('fileInput').value = '';
+    ['fieldName', 'fieldPhone', 'fieldEmail', 'fieldCompany', 'fieldAddress'].forEach(id => {
+      document.getElementById(id).textContent = '—';
+    });
+    document.getElementById('ocrOutput').value = '';
     hideError();
   });
 

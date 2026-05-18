@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -13,23 +13,23 @@
   <meta name="naver-site-verification" content="7396a327607b884b9bef1283dfd3a5c6115a2b50">
   <meta name="google-site-verification" content="tNM8tmr_6DFold03YSScWz4KEtu5Zo0Fsqc03u5Afms">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>이미지 텍스트 추출 무료 — 사진 OCR 온라인 | WooaOCR</title>
-  <meta name="description" content="JPG·PNG·WebP 이미지에서 텍스트를 무료로 추출. 한국어·영어·일본어 OCR 지원. 파일이 서버에 저장되지 않아 100% 안전합니다.">
-  <meta name="keywords" content="이미지 텍스트 추출, 사진 OCR, 온라인 OCR 무료, 이미지 글자 인식, JPG 텍스트 추출, 한국어 OCR, WooaOCR">
+  <title>표 OCR 무료 — 이미지 표를 텍스트·CSV로 변환 | WooaOCR</title>
+  <meta name="description" content="표·스프레드시트·그리드가 포함된 이미지를 업로드하면 텍스트를 인식하고 CSV 파일로 변환합니다.">
+  <meta name="keywords" content="표 OCR, 이미지 표 인식, 표 CSV 변환, 스프레드시트 OCR, 그리드 인식, 이미지 표 추출, WooaOCR">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://wooaocr.wooahouse.com/image-ocr.html">
-  <meta property="og:title" content="이미지 텍스트 추출 무료 — 사진 OCR | WooaOCR">
-  <meta property="og:description" content="JPG·PNG·WebP 이미지에서 텍스트를 무료로 추출. 한국어·영어·일본어 OCR 지원.">
+  <link rel="canonical" href="https://wooaocr.wooahouse.com/table-ocr.html">
+  <meta property="og:title" content="표 OCR 무료 — 이미지 표를 CSV로 변환 | WooaOCR">
+  <meta property="og:description" content="표·스프레드시트·그리드가 포함된 이미지를 업로드하면 텍스트를 인식하고 CSV 파일로 변환합니다.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://wooaocr.wooahouse.com/image-ocr.html">
+  <meta property="og:url" content="https://wooaocr.wooahouse.com/table-ocr.html">
   <meta property="og:locale" content="ko_KR">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "이미지 텍스트 추출 | WooaOCR",
-    "url": "https://wooaocr.wooahouse.com/image-ocr.html",
-    "description": "JPG·PNG·WebP 이미지에서 텍스트를 무료로 추출하는 온라인 OCR 도구",
+    "name": "표 OCR — 이미지 표 CSV 변환 | WooaOCR",
+    "url": "https://wooaocr.wooahouse.com/table-ocr.html",
+    "description": "표·스프레드시트·그리드가 포함된 이미지를 업로드하면 텍스트를 인식하고 CSV 파일로 변환하는 무료 온라인 도구",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Web",
     "isAccessibleForFree": true,
@@ -41,9 +41,9 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"어떤 이미지 형식을 지원하나요?","acceptedAnswer":{"@type":"Answer","text":"JPG, PNG, WebP, BMP, GIF 등 대부분의 이미지 형식을 지원합니다."}},
-      {"@type":"Question","name":"파일이 서버에 업로드되나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 모든 처리가 브라우저에서만 이루어지며 파일이 서버로 전송되지 않습니다."}},
-      {"@type":"Question","name":"어떤 언어를 인식할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"한국어, 영어, 일본어, 중국어 간체를 지원합니다. 복합 선택도 가능합니다."}}
+      {"@type":"Question","name":"어떤 형식의 표를 인식할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"격자형 표, 스프레드시트 스크린샷, 서류의 표 등 다양한 형식의 표를 인식할 수 있습니다."}},
+      {"@type":"Question","name":"표 구조가 틀릴 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"이미지 품질과 표 복잡도에 따라 오차가 생길 수 있습니다. CSV를 엑셀에서 수정하세요."}},
+      {"@type":"Question","name":"CSV를 엑셀에서 열면 한글이 깨져요?","acceptedAnswer":{"@type":"Answer","text":"UTF-8 BOM이 포함되어 있어 엑셀에서 바로 열 수 있습니다."}}
     ]
   }
   </script>
@@ -78,9 +78,6 @@
       border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.15s;
     }
     .result-tab.active { color: var(--primary); border-bottom-color: var(--primary); background: white; }
-    .confidence-bar { margin-top: 8px; display: flex; align-items: center; gap: 10px; font-size: 0.82rem; color: var(--text-light); }
-    .confidence-track { flex: 1; height: 6px; background: #E5E7EB; border-radius: 99px; overflow: hidden; }
-    .confidence-fill { height: 100%; border-radius: 99px; background: #22C55E; transition: width 0.4s; }
     .action-buttons { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
     .btn-action {
       display: inline-flex; align-items: center; gap: 6px;
@@ -89,10 +86,24 @@
     }
     .btn-copy { background: var(--primary); color: white; }
     .btn-copy:hover { background: var(--primary-dark); }
-    .btn-txt { background: #22C55E; color: white; }
-    .btn-txt:hover { background: #16A34A; }
+    .btn-csv { background: #22C55E; color: white; }
+    .btn-csv:hover { background: #16A34A; }
     .btn-reset { background: #F3F4F6; color: var(--text-light); }
     .btn-reset:hover { background: #E5E7EB; }
+    /* Table preview panel */
+    .table-panel {
+      border: 1px solid var(--border); border-top: none;
+      border-radius: 0 0 var(--radius) var(--radius);
+      padding: 16px; background: white; overflow-x: auto;
+    }
+    .ocr-table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    .ocr-table th, .ocr-table td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; white-space: nowrap; }
+    .ocr-table th { background: #FFF7ED; font-weight: 700; color: var(--primary); }
+    .ocr-table tr:nth-child(even) td { background: #FAFAFA; }
+    .alert-info {
+      margin-top: 14px; padding: 12px 16px; background: #EFF6FF; border-radius: var(--radius-sm);
+      border-left: 3px solid #3B82F6; font-size: 0.88rem; color: #1D4ED8; line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -101,8 +112,9 @@
   <div class="header-inner">
     <a href="index.html" class="logo">WooaOCR</a>
     <nav>
-      <a href="image-ocr.html" style="background:rgba(255,255,255,0.18);color:white;">이미지 OCR</a>
+      <a href="image-ocr.html">이미지 OCR</a>
       <a href="pdf-ocr.html">PDF OCR</a>
+      <a href="table-ocr.html" style="background:rgba(255,255,255,0.18);color:white;">표 OCR</a>
       <a href="index.html">전체 도구 ›</a>
     </nav>
   </div>
@@ -139,13 +151,13 @@
   <div class="breadcrumb">
     <a href="index.html">🏠 홈</a>
     <span>›</span>
-    <span>이미지 텍스트 추출</span>
+    <span>표 OCR</span>
   </div>
 
   <div class="tool-header">
-    <span class="tool-header-icon">🖼️</span>
-    <h1>이미지 텍스트 추출 무료 — 사진 OCR</h1>
-    <p>JPG·PNG·WebP 이미지에서 텍스트를 인식합니다. 파일이 서버에 저장되지 않아 안전합니다.</p>
+    <span class="tool-header-icon">📊</span>
+    <h1>표 OCR — 이미지 표를 CSV로 변환</h1>
+    <p>표·스프레드시트 이미지를 업로드하면 셀 내용을 인식하고 CSV 파일로 다운로드할 수 있습니다.</p>
   </div>
 
   <!-- 언어 선택 -->
@@ -160,10 +172,13 @@
     </div>
   </div>
 
+  <!-- 안내 메시지 -->
+  <div class="alert-info">💡 표의 경계가 명확하고 텍스트가 선명할수록 인식 정확도가 높습니다.</div>
+
   <!-- 드롭존 -->
   <div class="drop-zone" id="dropZone" style="margin-top:16px;">
-    <span class="drop-zone-icon">🖼️</span>
-    <h3>이미지를 여기에 끌어다 놓으세요</h3>
+    <span class="drop-zone-icon">📊</span>
+    <h3>표가 포함된 이미지를 여기에 끌어다 놓으세요</h3>
     <p>JPG · PNG · WebP · BMP 지원 | 최대 20MB</p>
     <label for="fileInput" class="btn-select">이미지 파일 선택</label>
     <input type="file" id="fileInput" accept="image/*" style="display:none">
@@ -171,9 +186,9 @@
 
   <div style="margin-top:14px;padding:14px 16px;background:#FFF7ED;border-radius:10px;border:1px solid #FED7AA;font-size:0.83rem;line-height:1.8;color:#78350F;">
     <div style="font-weight:700;margin-bottom:6px;">✅ 잘 인식되는 경우</div>
-    <div>📄 인쇄된 문서·스캔본 &nbsp;|&nbsp; 📰 뉴스·책 페이지 &nbsp;|&nbsp; 📊 표·스프레드시트 &nbsp;|&nbsp; 📸 선명한 고해상도 사진</div>
+    <div>📊 경계선이 명확한 표 &nbsp;|&nbsp; 📄 스프레드시트·엑셀 캡처 &nbsp;|&nbsp; 🖨️ 인쇄된 표·문서 스캔 &nbsp;|&nbsp; 📸 선명하게 촬영된 표</div>
     <div style="font-weight:700;margin-top:10px;margin-bottom:6px;">⚠️ 인식률이 낮은 경우</div>
-    <div>🎨 색상 배경 위 글자 &nbsp;|&nbsp; 🔤 흐리거나 기울어진 텍스트 &nbsp;|&nbsp; 📷 저해상도·흔들린 사진</div>
+    <div>🔲 경계선 없이 공백으로만 구분된 표 &nbsp;|&nbsp; 🔤 작거나 흐린 셀 내 텍스트 &nbsp;|&nbsp; 🎨 셀 배경색이 진한 표 &nbsp;|&nbsp; 📷 기울어진 이미지</div>
   </div>
 
   <!-- 이미지 미리보기 -->
@@ -184,7 +199,7 @@
   <div id="errorMsg" class="alert alert-error" style="display:none;margin-top:12px;"></div>
 
   <!-- 인식 버튼 -->
-  <button class="btn-convert" id="startOcrBtn" style="display:none;">🔍 텍스트 인식 시작</button>
+  <button class="btn-convert" id="startOcrBtn" style="display:none;">📊 표 인식 시작</button>
 
   <!-- 진행바 -->
   <div class="progress-wrap" id="progressWrap">
@@ -198,40 +213,41 @@
   <!-- 결과 -->
   <div id="resultArea" style="display:none;margin-top:24px;">
     <div class="result-tabs">
-      <button class="result-tab active" id="tabText">📝 추출된 텍스트</button>
-      <button class="result-tab" id="tabInfo">ℹ️ 인식 정보</button>
+      <button class="result-tab active" id="tabTable">📊 표 미리보기</button>
+      <button class="result-tab" id="tabText">📝 원본 텍스트</button>
+      <button class="result-tab" id="tabCsv">💾 CSV 미리보기</button>
     </div>
-    <div id="panelText">
-      <textarea class="ocr-output" id="ocrOutput" spellcheck="false" placeholder="인식된 텍스트가 여기에 표시됩니다..."></textarea>
+
+    <!-- 표 미리보기 패널 -->
+    <div id="panelTable" class="table-panel">
+      <div id="tableOutput"></div>
     </div>
-    <div id="panelInfo" style="display:none; padding:16px; background:white; border:1px solid var(--border); border-top:none; border-radius:0 0 var(--radius) var(--radius);">
-      <div style="font-size:0.88rem; color:var(--text-light); line-height:2;">
-        <div>📄 <strong>파일명:</strong> <span id="infoFilename">—</span></div>
-        <div>📐 <strong>해상도:</strong> <span id="infoSize">—</span></div>
-        <div>🔤 <strong>인식 언어:</strong> <span id="infoLang">—</span></div>
-        <div>✅ <strong>신뢰도:</strong> <span id="infoConf">—</span></div>
-      </div>
-      <div class="confidence-bar" style="margin-top:12px;">
-        <span style="font-size:0.82rem;color:var(--text-light);white-space:nowrap;">신뢰도</span>
-        <div class="confidence-track"><div class="confidence-fill" id="confFill" style="width:0%;"></div></div>
-        <span id="confPct" style="font-size:0.82rem;font-weight:700;color:var(--text-light);">0%</span>
-      </div>
+
+    <!-- 원본 텍스트 패널 -->
+    <div id="panelText" style="display:none;">
+      <textarea class="ocr-output" id="ocrOutput" spellcheck="false" placeholder="인식된 원본 텍스트가 여기에 표시됩니다..."></textarea>
     </div>
+
+    <!-- CSV 미리보기 패널 -->
+    <div id="panelCsv" style="display:none;">
+      <textarea class="ocr-output" id="csvOutput" spellcheck="false" placeholder="CSV 데이터가 여기에 표시됩니다..."></textarea>
+    </div>
+
     <div class="action-buttons">
-      <button class="btn-action btn-copy" id="copyBtn">📋 복사</button>
-      <button class="btn-action btn-txt" id="downloadBtn">⬇️ TXT 저장</button>
+      <button class="btn-action btn-copy" id="copyBtn">📋 텍스트 복사</button>
+      <button class="btn-action btn-csv" id="downloadBtn">⬇️ CSV 다운로드</button>
       <button class="btn-action btn-reset" id="resetBtn">🔄 초기화</button>
     </div>
   </div>
 
-  <div class="cross-link-tip" style="margin-top:28px;">
-    💡 텍스트 레이어가 있는 PDF는 OCR 없이 추출 가능합니다.
-    <a href="https://pdfkit.wooahouse.com/pdf-text-extract.html" target="_blank" rel="noopener">WooaPDF 텍스트 추출 →</a>
+  <div class="cross-link-banner" style="margin-top:24px;">
+    <span>🖼️ 이미지에서 일반 텍스트를 추출하려면?</span>
+    <a href="image-ocr.html">이미지 OCR 바로가기 →</a>
   </div>
 
-  <div class="cross-link-banner" style="margin-top:16px;">
-    <span>📄 스캔된 PDF에서 텍스트를 추출하려면?</span>
-    <a href="pdf-ocr.html">PDF OCR 바로가기 →</a>
+  <div class="cross-link-tip" style="margin-top:16px;">
+    💡 텍스트 레이어가 있는 PDF 표는 OCR 없이 추출 가능합니다.
+    <a href="https://pdfkit.wooahouse.com/pdf-text-extract.html" target="_blank" rel="noopener">WooaPDF 텍스트 추출 →</a>
   </div>
 
   <!-- FAQ -->
@@ -239,16 +255,16 @@
     <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:16px;">자주 묻는 질문</h2>
     <div style="display:flex;flex-direction:column;gap:10px;">
       <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
-        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 어떤 이미지 형식을 지원하나요?</div>
-        <div style="color:var(--text-light);font-size:0.88rem;">JPG, PNG, WebP, BMP, GIF 등 대부분의 이미지 형식을 지원합니다.</div>
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 어떤 형식의 표를 인식할 수 있나요?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">격자형 표, 스프레드시트 스크린샷, 서류의 표 등 다양한 형식의 표를 인식할 수 있습니다.</div>
       </div>
       <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
-        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 파일이 서버에 업로드되나요?</div>
-        <div style="color:var(--text-light);font-size:0.88rem;">아니요. 모든 처리가 브라우저에서만 이루어지며 파일이 서버로 전송되지 않습니다.</div>
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 표 구조가 틀릴 수 있나요?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">이미지 품질과 표 복잡도에 따라 오차가 생길 수 있습니다. CSV를 엑셀에서 수정하세요.</div>
       </div>
       <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
-        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 인식 정확도가 낮을 때는 어떻게 하나요?</div>
-        <div style="color:var(--text-light);font-size:0.88rem;">이미지 해상도가 높을수록 정확도가 올라갑니다. 흐리거나 기울어진 이미지는 정확도가 낮을 수 있습니다.</div>
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. CSV를 엑셀에서 열면 한글이 깨져요?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">UTF-8 BOM이 포함되어 있어 엑셀에서 바로 열 수 있습니다.</div>
       </div>
     </div>
   </section>
@@ -285,7 +301,7 @@
 <script>
   let selectedFile = null;
   let selectedLang = 'kor+eng';
-  let ocrResult = null;
+  let csvText = '';
 
   // 언어 칩 선택
   document.querySelectorAll('.lang-chip').forEach(chip => {
@@ -318,7 +334,7 @@
     }
     hideError();
     selectedFile = file;
-    ocrResult = null;
+    csvText = '';
     document.getElementById('resultArea').style.display = 'none';
     document.getElementById('progressWrap').style.display = 'none';
 
@@ -333,38 +349,6 @@
 
   document.getElementById('startOcrBtn').addEventListener('click', startOcr);
 
-  // 이미지 전처리: 2x 업스케일 + 대비 강화
-  async function prepareCanvas(file) {
-    return new Promise((resolve, reject) => {
-      const img = new Image();
-      const url = URL.createObjectURL(file);
-      img.onload = () => {
-        const scale = img.naturalWidth < 1000 ? 2 : 1; // 소형 이미지만 업스케일
-        const canvas = document.createElement('canvas');
-        canvas.width = img.naturalWidth * scale;
-        canvas.height = img.naturalHeight * scale;
-        const ctx = canvas.getContext('2d');
-        ctx.imageSmoothingEnabled = true;
-        ctx.imageSmoothingQuality = 'high';
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-        URL.revokeObjectURL(url);
-        // 대비 강화
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-        const d = imageData.data;
-        const factor = (259 * (1.25 * 255 + 255)) / (255 * (259 - 1.25 * 255));
-        for (let i = 0; i < d.length; i += 4) {
-          d[i]   = Math.min(255, Math.max(0, factor * (d[i]   - 128) + 128));
-          d[i+1] = Math.min(255, Math.max(0, factor * (d[i+1] - 128) + 128));
-          d[i+2] = Math.min(255, Math.max(0, factor * (d[i+2] - 128) + 128));
-        }
-        ctx.putImageData(imageData, 0, 0);
-        resolve(canvas);
-      };
-      img.onerror = reject;
-      img.src = url;
-    });
-  }
-
   async function startOcr() {
     if (!selectedFile) return;
     document.getElementById('startOcrBtn').disabled = true;
@@ -376,10 +360,7 @@
     updateProgress(0, 'OCR 엔진 초기화 중...');
 
     try {
-      updateProgress(3, '이미지 전처리 중...');
-      const ocrTarget = await prepareCanvas(selectedFile);
-
-      const { data } = await Tesseract.recognize(ocrTarget, selectedLang, {
+      const { data } = await Tesseract.recognize(selectedFile, selectedLang, {
         logger: m => {
           if (m.status === 'recognizing text') {
             updateProgress(Math.round(m.progress * 100), `텍스트 인식 중... ${Math.round(m.progress * 100)}%`);
@@ -395,24 +376,22 @@
 
       updateProgress(100, '인식 완료!');
       document.getElementById('progressWrap').style.display = 'none';
-      ocrResult = data;
 
+      // 원본 텍스트
       document.getElementById('ocrOutput').value = data.text.trim();
 
-      // 신뢰도 계산
-      const conf = Math.round(data.confidence);
-      document.getElementById('confFill').style.width = conf + '%';
-      document.getElementById('confFill').style.background = conf >= 70 ? '#22C55E' : conf >= 40 ? '#F59E0B' : '#EF4444';
-      document.getElementById('confPct').textContent = conf + '%';
-      document.getElementById('confPct').style.color = conf >= 70 ? '#16A34A' : conf >= 40 ? '#D97706' : '#DC2626';
+      // 표 재구성
+      const { rows, csv } = reconstructTable(data);
+      csvText = csv;
 
-      // 정보 탭
-      const img = document.getElementById('previewImg');
-      document.getElementById('infoFilename').textContent = selectedFile.name;
-      document.getElementById('infoSize').textContent = img.naturalWidth + ' × ' + img.naturalHeight + ' px';
-      document.getElementById('infoLang').textContent = selectedLang.replace(/\+/g, ' + ');
-      document.getElementById('infoConf').textContent = conf + '%';
+      // 표 렌더링
+      document.getElementById('tableOutput').innerHTML = renderTable(rows);
 
+      // CSV 미리보기
+      document.getElementById('csvOutput').value = csv;
+
+      // 결과 표시 (표 탭 기본)
+      showTab('table');
       document.getElementById('resultArea').style.display = 'block';
       document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
 
@@ -422,42 +401,114 @@
       document.getElementById('progressWrap').style.display = 'none';
     } finally {
       document.getElementById('startOcrBtn').disabled = false;
-      document.getElementById('startOcrBtn').textContent = '🔍 텍스트 인식 시작';
+      document.getElementById('startOcrBtn').textContent = '📊 표 인식 시작';
     }
   }
 
-  // 탭 전환
-  document.getElementById('tabText').addEventListener('click', () => {
-    document.getElementById('tabText').classList.add('active');
-    document.getElementById('tabInfo').classList.remove('active');
-    document.getElementById('panelText').style.display = 'block';
-    document.getElementById('panelInfo').style.display = 'none';
-  });
-  document.getElementById('tabInfo').addEventListener('click', () => {
-    document.getElementById('tabInfo').classList.add('active');
-    document.getElementById('tabText').classList.remove('active');
-    document.getElementById('panelInfo').style.display = 'block';
-    document.getElementById('panelText').style.display = 'none';
-  });
+  // 표 재구성 로직
+  function reconstructTable(data) {
+    const lines = data.lines.filter(l => l.text.trim());
+    if (!lines.length) return { rows: [], csv: '' };
 
-  // 복사
+    // y0 기준 정렬
+    lines.sort((a, b) => a.bbox.y0 - b.bbox.y0);
+
+    // 행 클러스터링: y0 차이 20px 이내 = 같은 행
+    const rows = [];
+    let currentRow = [lines[0]];
+    for (let i = 1; i < lines.length; i++) {
+      const prev = currentRow[currentRow.length - 1];
+      if (lines[i].bbox.y0 - prev.bbox.y0 < 20) {
+        currentRow.push(lines[i]);
+      } else {
+        rows.push(currentRow);
+        currentRow = [lines[i]];
+      }
+    }
+    rows.push(currentRow);
+
+    // 각 행 내에서 x0 기준 정렬 후 셀 분리
+    const tableRows = rows.map(row => {
+      row.sort((a, b) => a.bbox.x0 - b.bbox.x0);
+      const cells = [];
+      let cellText = row[0].text.trim();
+      for (let i = 1; i < row.length; i++) {
+        const gap = row[i].bbox.x0 - row[i - 1].bbox.x1;
+        if (gap > 30) {
+          cells.push(cellText);
+          cellText = row[i].text.trim();
+        } else {
+          cellText += ' ' + row[i].text.trim();
+        }
+      }
+      cells.push(cellText);
+      return cells;
+    });
+
+    // 열 수 정규화
+    const maxCols = Math.max(...tableRows.map(r => r.length));
+    const normalized = tableRows.map(r => {
+      while (r.length < maxCols) r.push('');
+      return r;
+    });
+
+    // CSV 생성
+    const csv = normalized.map(row =>
+      row.map(cell => '"' + cell.replace(/"/g, '""') + '"').join(',')
+    ).join('\n');
+
+    return { rows: normalized, csv };
+  }
+
+  // HTML 표 렌더링
+  function renderTable(rows) {
+    if (!rows.length) return '<p style="color:var(--text-light)">표를 감지하지 못했습니다.</p>';
+    let html = '<div style="overflow-x:auto"><table class="ocr-table">';
+    rows.forEach((row, i) => {
+      html += '<tr>';
+      row.forEach(cell => {
+        const tag = i === 0 ? 'th' : 'td';
+        html += `<${tag}>${cell || '&nbsp;'}</${tag}>`;
+      });
+      html += '</tr>';
+    });
+    html += '</table></div>';
+    return html;
+  }
+
+  // 탭 전환
+  function showTab(tab) {
+    ['table', 'text', 'csv'].forEach(t => {
+      document.getElementById('tab' + t.charAt(0).toUpperCase() + t.slice(1)).classList.remove('active');
+      document.getElementById('panel' + t.charAt(0).toUpperCase() + t.slice(1)).style.display = 'none';
+    });
+    document.getElementById('tab' + tab.charAt(0).toUpperCase() + tab.slice(1)).classList.add('active');
+    document.getElementById('panel' + tab.charAt(0).toUpperCase() + tab.slice(1)).style.display = 'block';
+  }
+
+  document.getElementById('tabTable').addEventListener('click', () => showTab('table'));
+  document.getElementById('tabText').addEventListener('click', () => showTab('text'));
+  document.getElementById('tabCsv').addEventListener('click', () => showTab('csv'));
+
+  // 텍스트 복사
   document.getElementById('copyBtn').addEventListener('click', () => {
     const text = document.getElementById('ocrOutput').value;
     navigator.clipboard.writeText(text).then(() => {
       const btn = document.getElementById('copyBtn');
       btn.textContent = '✅ 복사됨!';
-      setTimeout(() => btn.textContent = '📋 복사', 2000);
+      setTimeout(() => btn.textContent = '📋 텍스트 복사', 2000);
     });
   });
 
-  // TXT 다운로드
+  // CSV 다운로드 (BOM 포함 — 엑셀 한글 지원)
   document.getElementById('downloadBtn').addEventListener('click', () => {
-    const text = document.getElementById('ocrOutput').value;
-    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
+    if (!csvText) return;
+    const bom = new Uint8Array([0xEF, 0xBB, 0xBF]);
+    const blobWithBom = new Blob([bom, csvText], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blobWithBom);
     const a = document.createElement('a');
     a.href = url;
-    a.download = (selectedFile ? selectedFile.name.replace(/\.[^.]+$/, '') : 'ocr-result') + '.txt';
+    a.download = (selectedFile ? selectedFile.name.replace(/\.[^.]+$/, '') : 'table-ocr') + '.csv';
     a.click();
     URL.revokeObjectURL(url);
   });
@@ -465,13 +516,17 @@
   // 초기화
   document.getElementById('resetBtn').addEventListener('click', () => {
     selectedFile = null;
-    ocrResult = null;
+    csvText = '';
     document.getElementById('previewWrap').style.display = 'none';
     document.getElementById('previewImg').src = '';
     document.getElementById('startOcrBtn').style.display = 'none';
     document.getElementById('resultArea').style.display = 'none';
     document.getElementById('progressWrap').style.display = 'none';
     document.getElementById('fileInput').value = '';
+    document.getElementById('tableOutput').innerHTML = '';
+    document.getElementById('ocrOutput').value = '';
+    document.getElementById('csvOutput').value = '';
+    showTab('table');
     hideError();
   });
 

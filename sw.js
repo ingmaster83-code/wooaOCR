@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ocrkit-v1';
+const CACHE_NAME = 'ocrkit-v2';
 const STATIC_ASSETS = ['/', '/index.html', '/css/style.css', '/manifest.json', '/icons/icon.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS)));

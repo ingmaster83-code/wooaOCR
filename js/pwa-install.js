@@ -45,7 +45,7 @@
     }
   });
 
-  var CONVERT_IDS = ['startOcrBtn','startPdfOcrBtn','convertBtn','processBtn','generateBtn'];
+  var CONVERT_IDS = ['startOcrBtn','startPdfOcrBtn','startBatchBtn','convertBtn','processBtn','generateBtn','downloadBtn'];
   var adDone = false;
 
   document.addEventListener('click', function(e) {

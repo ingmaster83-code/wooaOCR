@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -13,23 +13,23 @@
   <meta name="naver-site-verification" content="7396a327607b884b9bef1283dfd3a5c6115a2b50">
   <meta name="google-site-verification" content="tNM8tmr_6DFold03YSScWz4KEtu5Zo0Fsqc03u5Afms">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>이미지 텍스트 추출 무료 — 사진 OCR 온라인 | WooaOCR</title>
-  <meta name="description" content="JPG·PNG·WebP 이미지에서 텍스트를 무료로 추출. 한국어·영어·일본어 OCR 지원. 파일이 서버에 저장되지 않아 100% 안전합니다.">
-  <meta name="keywords" content="이미지 텍스트 추출, 사진 OCR, 온라인 OCR 무료, 이미지 글자 인식, JPG 텍스트 추출, 한국어 OCR, WooaOCR">
+  <title>영수증 OCR 무료 — 영수증·청구서 텍스트 추출 | WooaOCR</title>
+  <meta name="description" content="영수증·청구서 사진을 업로드하면 텍스트와 금액을 자동으로 추출합니다. 합계·부가세·항목별 금액을 한눈에 확인.">
+  <meta name="keywords" content="영수증 OCR, 영수증 텍스트 추출, 청구서 OCR, 영수증 금액 인식, 카드 영수증 텍스트, 영수증 스캔, WooaOCR">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://wooaocr.wooahouse.com/image-ocr.html">
-  <meta property="og:title" content="이미지 텍스트 추출 무료 — 사진 OCR | WooaOCR">
-  <meta property="og:description" content="JPG·PNG·WebP 이미지에서 텍스트를 무료로 추출. 한국어·영어·일본어 OCR 지원.">
+  <link rel="canonical" href="https://wooaocr.wooahouse.com/receipt-ocr.html">
+  <meta property="og:title" content="영수증 OCR 무료 — 영수증·청구서 텍스트 추출 | WooaOCR">
+  <meta property="og:description" content="영수증·청구서 사진을 업로드하면 텍스트와 금액을 자동으로 추출합니다. 합계·부가세·항목별 금액을 한눈에 확인.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://wooaocr.wooahouse.com/image-ocr.html">
+  <meta property="og:url" content="https://wooaocr.wooahouse.com/receipt-ocr.html">
   <meta property="og:locale" content="ko_KR">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "이미지 텍스트 추출 | WooaOCR",
-    "url": "https://wooaocr.wooahouse.com/image-ocr.html",
-    "description": "JPG·PNG·WebP 이미지에서 텍스트를 무료로 추출하는 온라인 OCR 도구",
+    "name": "영수증 OCR | WooaOCR",
+    "url": "https://wooaocr.wooahouse.com/receipt-ocr.html",
+    "description": "영수증·청구서 사진을 업로드하면 텍스트와 금액 정보를 자동으로 추출하는 무료 OCR 도구",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Web",
     "isAccessibleForFree": true,
@@ -41,9 +41,9 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"어떤 이미지 형식을 지원하나요?","acceptedAnswer":{"@type":"Answer","text":"JPG, PNG, WebP, BMP, GIF 등 대부분의 이미지 형식을 지원합니다."}},
-      {"@type":"Question","name":"파일이 서버에 업로드되나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 모든 처리가 브라우저에서만 이루어지며 파일이 서버로 전송되지 않습니다."}},
-      {"@type":"Question","name":"어떤 언어를 인식할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"한국어, 영어, 일본어, 중국어 간체를 지원합니다. 복합 선택도 가능합니다."}}
+      {"@type":"Question","name":"어떤 형식의 영수증을 지원하나요?","acceptedAnswer":{"@type":"Answer","text":"일반 영수증, 카드 영수증, 세금계산서 등 텍스트가 있는 모든 영수증을 지원합니다."}},
+      {"@type":"Question","name":"금액 합계를 자동으로 계산해주나요?","acceptedAnswer":{"@type":"Answer","text":"텍스트에서 금액을 감지하여 표시하지만, 정확한 합계 계산은 지원하지 않습니다."}},
+      {"@type":"Question","name":"파일이 서버에 저장되나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 모든 처리가 브라우저에서만 이루어지며 파일이 서버로 전송되지 않습니다."}}
     ]
   }
   </script>
@@ -78,9 +78,6 @@
       border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.15s;
     }
     .result-tab.active { color: var(--primary); border-bottom-color: var(--primary); background: white; }
-    .confidence-bar { margin-top: 8px; display: flex; align-items: center; gap: 10px; font-size: 0.82rem; color: var(--text-light); }
-    .confidence-track { flex: 1; height: 6px; background: #E5E7EB; border-radius: 99px; overflow: hidden; }
-    .confidence-fill { height: 100%; border-radius: 99px; background: #22C55E; transition: width 0.4s; }
     .action-buttons { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
     .btn-action {
       display: inline-flex; align-items: center; gap: 6px;
@@ -93,6 +90,52 @@
     .btn-txt:hover { background: #16A34A; }
     .btn-reset { background: #F3F4F6; color: var(--text-light); }
     .btn-reset:hover { background: #E5E7EB; }
+
+    /* 금액 요약 */
+    .amount-summary {
+      background: #FFF7ED;
+      border: 1px solid #FED7AA;
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      margin-top: 16px;
+    }
+    .amount-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+    .amount-chip {
+      background: white;
+      border: 1px solid #FED7AA;
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #92400E;
+    }
+    .amount-total {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary);
+      border-top: 1px solid #FED7AA;
+      padding-top: 8px;
+      margin-top: 4px;
+    }
+    mark.num-highlight {
+      background: #FEF3C7;
+      color: #92400E;
+      border-radius: 3px;
+      padding: 0 2px;
+    }
+    #highlightedOutput {
+      min-height: 200px;
+      max-height: 400px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 0 0 var(--radius) var(--radius);
+      font-size: 0.9rem;
+      line-height: 1.8;
+      font-family: 'Noto Sans KR', sans-serif;
+      overflow-y: auto;
+      background: white;
+      box-sizing: border-box;
+    }
   </style>
 </head>
 <body>
@@ -101,8 +144,9 @@
   <div class="header-inner">
     <a href="index.html" class="logo">WooaOCR</a>
     <nav>
-      <a href="image-ocr.html" style="background:rgba(255,255,255,0.18);color:white;">이미지 OCR</a>
+      <a href="image-ocr.html">이미지 OCR</a>
       <a href="pdf-ocr.html">PDF OCR</a>
+      <a href="receipt-ocr.html" style="background:rgba(255,255,255,0.18);color:white;">영수증 OCR</a>
       <a href="index.html">전체 도구 ›</a>
     </nav>
   </div>
@@ -139,13 +183,13 @@
   <div class="breadcrumb">
     <a href="index.html">🏠 홈</a>
     <span>›</span>
-    <span>이미지 텍스트 추출</span>
+    <span>영수증 OCR</span>
   </div>
 
   <div class="tool-header">
-    <span class="tool-header-icon">🖼️</span>
-    <h1>이미지 텍스트 추출 무료 — 사진 OCR</h1>
-    <p>JPG·PNG·WebP 이미지에서 텍스트를 인식합니다. 파일이 서버에 저장되지 않아 안전합니다.</p>
+    <span class="tool-header-icon">🧾</span>
+    <h1>영수증 OCR — 영수증·청구서 텍스트 자동 추출</h1>
+    <p>영수증이나 청구서 사진을 업로드하면 텍스트와 금액 정보를 자동으로 추출합니다.</p>
   </div>
 
   <!-- 언어 선택 -->
@@ -162,8 +206,8 @@
 
   <!-- 드롭존 -->
   <div class="drop-zone" id="dropZone" style="margin-top:16px;">
-    <span class="drop-zone-icon">🖼️</span>
-    <h3>이미지를 여기에 끌어다 놓으세요</h3>
+    <span class="drop-zone-icon">🧾</span>
+    <h3>영수증·청구서 이미지를 여기에 끌어다 놓으세요</h3>
     <p>JPG · PNG · WebP · BMP 지원 | 최대 20MB</p>
     <label for="fileInput" class="btn-select">이미지 파일 선택</label>
     <input type="file" id="fileInput" accept="image/*" style="display:none">
@@ -171,14 +215,14 @@
 
   <div style="margin-top:14px;padding:14px 16px;background:#FFF7ED;border-radius:10px;border:1px solid #FED7AA;font-size:0.83rem;line-height:1.8;color:#78350F;">
     <div style="font-weight:700;margin-bottom:6px;">✅ 잘 인식되는 경우</div>
-    <div>📄 인쇄된 문서·스캔본 &nbsp;|&nbsp; 📰 뉴스·책 페이지 &nbsp;|&nbsp; 📊 표·스프레드시트 &nbsp;|&nbsp; 📸 선명한 고해상도 사진</div>
+    <div>🧾 선명하게 출력된 영수증 &nbsp;|&nbsp; 📸 정면에서 밝게 촬영한 사진 &nbsp;|&nbsp; 🖨️ 레이저 프린터 인쇄 청구서 &nbsp;|&nbsp; 📄 스캔본 영수증</div>
     <div style="font-weight:700;margin-top:10px;margin-bottom:6px;">⚠️ 인식률이 낮은 경우</div>
-    <div>🎨 색상 배경 위 글자 &nbsp;|&nbsp; 🔤 흐리거나 기울어진 텍스트 &nbsp;|&nbsp; 📷 저해상도·흔들린 사진</div>
+    <div>🌡️ 글자가 옅게 인쇄된 감열지 영수증 &nbsp;|&nbsp; 📷 기울어지거나 구겨진 영수증 &nbsp;|&nbsp; 🌑 어두운 조명 아래 촬영 &nbsp;|&nbsp; 🔤 매우 작은 글씨</div>
   </div>
 
   <!-- 이미지 미리보기 -->
   <div id="previewWrap" class="image-preview-wrap" style="display:none;">
-    <img id="previewImg" src="" alt="미리보기">
+    <img id="previewImg" src="" alt="영수증 미리보기">
   </div>
 
   <div id="errorMsg" class="alert alert-error" style="display:none;margin-top:12px;"></div>
@@ -195,27 +239,24 @@
     <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
   </div>
 
+  <!-- 금액 요약 -->
+  <div class="amount-summary" id="amountSummary" style="display:none;">
+    <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:10px;">💰 감지된 금액</h3>
+    <div id="amountList" class="amount-list"></div>
+    <div class="amount-total" id="amountTotal" style="display:none;"></div>
+  </div>
+
   <!-- 결과 -->
   <div id="resultArea" style="display:none;margin-top:24px;">
     <div class="result-tabs">
-      <button class="result-tab active" id="tabText">📝 추출된 텍스트</button>
-      <button class="result-tab" id="tabInfo">ℹ️ 인식 정보</button>
+      <button class="result-tab active" id="tabHighlight">💡 금액 강조</button>
+      <button class="result-tab" id="tabRaw">📝 원본 텍스트</button>
     </div>
-    <div id="panelText">
+    <div id="panelHighlight">
+      <div id="highlightedOutput" class="ocr-output" style="white-space:pre-wrap;"></div>
+    </div>
+    <div id="panelRaw" style="display:none;">
       <textarea class="ocr-output" id="ocrOutput" spellcheck="false" placeholder="인식된 텍스트가 여기에 표시됩니다..."></textarea>
-    </div>
-    <div id="panelInfo" style="display:none; padding:16px; background:white; border:1px solid var(--border); border-top:none; border-radius:0 0 var(--radius) var(--radius);">
-      <div style="font-size:0.88rem; color:var(--text-light); line-height:2;">
-        <div>📄 <strong>파일명:</strong> <span id="infoFilename">—</span></div>
-        <div>📐 <strong>해상도:</strong> <span id="infoSize">—</span></div>
-        <div>🔤 <strong>인식 언어:</strong> <span id="infoLang">—</span></div>
-        <div>✅ <strong>신뢰도:</strong> <span id="infoConf">—</span></div>
-      </div>
-      <div class="confidence-bar" style="margin-top:12px;">
-        <span style="font-size:0.82rem;color:var(--text-light);white-space:nowrap;">신뢰도</span>
-        <div class="confidence-track"><div class="confidence-fill" id="confFill" style="width:0%;"></div></div>
-        <span id="confPct" style="font-size:0.82rem;font-weight:700;color:var(--text-light);">0%</span>
-      </div>
     </div>
     <div class="action-buttons">
       <button class="btn-action btn-copy" id="copyBtn">📋 복사</button>
@@ -225,13 +266,13 @@
   </div>
 
   <div class="cross-link-tip" style="margin-top:28px;">
-    💡 텍스트 레이어가 있는 PDF는 OCR 없이 추출 가능합니다.
+    💡 텍스트 레이어가 있는 PDF 청구서는 OCR 없이 추출 가능합니다.
     <a href="https://pdfkit.wooahouse.com/pdf-text-extract.html" target="_blank" rel="noopener">WooaPDF 텍스트 추출 →</a>
   </div>
 
   <div class="cross-link-banner" style="margin-top:16px;">
-    <span>📄 스캔된 PDF에서 텍스트를 추출하려면?</span>
-    <a href="pdf-ocr.html">PDF OCR 바로가기 →</a>
+    <span>🖼️ 일반 이미지에서 텍스트를 추출하려면?</span>
+    <a href="image-ocr.html">이미지 OCR 바로가기 →</a>
   </div>
 
   <!-- FAQ -->
@@ -239,16 +280,16 @@
     <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:16px;">자주 묻는 질문</h2>
     <div style="display:flex;flex-direction:column;gap:10px;">
       <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
-        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 어떤 이미지 형식을 지원하나요?</div>
-        <div style="color:var(--text-light);font-size:0.88rem;">JPG, PNG, WebP, BMP, GIF 등 대부분의 이미지 형식을 지원합니다.</div>
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 어떤 형식의 영수증을 지원하나요?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">일반 영수증, 카드 영수증, 세금계산서 등 텍스트가 있는 모든 영수증을 지원합니다.</div>
       </div>
       <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
-        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 파일이 서버에 업로드되나요?</div>
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 금액 합계를 자동으로 계산해주나요?</div>
+        <div style="color:var(--text-light);font-size:0.88rem;">텍스트에서 금액을 감지하여 표시하지만, 정확한 합계 계산은 지원하지 않습니다.</div>
+      </div>
+      <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
+        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 파일이 서버에 저장되나요?</div>
         <div style="color:var(--text-light);font-size:0.88rem;">아니요. 모든 처리가 브라우저에서만 이루어지며 파일이 서버로 전송되지 않습니다.</div>
-      </div>
-      <div style="padding:16px;background:#FFF7ED;border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
-        <div style="font-weight:600;font-size:0.92rem;margin-bottom:6px;">Q. 인식 정확도가 낮을 때는 어떻게 하나요?</div>
-        <div style="color:var(--text-light);font-size:0.88rem;">이미지 해상도가 높을수록 정확도가 올라갑니다. 흐리거나 기울어진 이미지는 정확도가 낮을 수 있습니다.</div>
       </div>
     </div>
   </section>
@@ -285,7 +326,7 @@
 <script>
   let selectedFile = null;
   let selectedLang = 'kor+eng';
-  let ocrResult = null;
+  let rawText = '';
 
   // 언어 칩 선택
   document.querySelectorAll('.lang-chip').forEach(chip => {
@@ -318,8 +359,9 @@
     }
     hideError();
     selectedFile = file;
-    ocrResult = null;
+    rawText = '';
     document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('amountSummary').style.display = 'none';
     document.getElementById('progressWrap').style.display = 'none';
 
     const reader = new FileReader();
@@ -333,53 +375,19 @@
 
   document.getElementById('startOcrBtn').addEventListener('click', startOcr);
 
-  // 이미지 전처리: 2x 업스케일 + 대비 강화
-  async function prepareCanvas(file) {
-    return new Promise((resolve, reject) => {
-      const img = new Image();
-      const url = URL.createObjectURL(file);
-      img.onload = () => {
-        const scale = img.naturalWidth < 1000 ? 2 : 1; // 소형 이미지만 업스케일
-        const canvas = document.createElement('canvas');
-        canvas.width = img.naturalWidth * scale;
-        canvas.height = img.naturalHeight * scale;
-        const ctx = canvas.getContext('2d');
-        ctx.imageSmoothingEnabled = true;
-        ctx.imageSmoothingQuality = 'high';
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-        URL.revokeObjectURL(url);
-        // 대비 강화
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-        const d = imageData.data;
-        const factor = (259 * (1.25 * 255 + 255)) / (255 * (259 - 1.25 * 255));
-        for (let i = 0; i < d.length; i += 4) {
-          d[i]   = Math.min(255, Math.max(0, factor * (d[i]   - 128) + 128));
-          d[i+1] = Math.min(255, Math.max(0, factor * (d[i+1] - 128) + 128));
-          d[i+2] = Math.min(255, Math.max(0, factor * (d[i+2] - 128) + 128));
-        }
-        ctx.putImageData(imageData, 0, 0);
-        resolve(canvas);
-      };
-      img.onerror = reject;
-      img.src = url;
-    });
-  }
-
   async function startOcr() {
     if (!selectedFile) return;
     document.getElementById('startOcrBtn').disabled = true;
     document.getElementById('startOcrBtn').textContent = '인식 중...';
     document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('amountSummary').style.display = 'none';
     document.getElementById('progressWrap').style.display = 'block';
     hideError();
 
     updateProgress(0, 'OCR 엔진 초기화 중...');
 
     try {
-      updateProgress(3, '이미지 전처리 중...');
-      const ocrTarget = await prepareCanvas(selectedFile);
-
-      const { data } = await Tesseract.recognize(ocrTarget, selectedLang, {
+      const { data } = await Tesseract.recognize(selectedFile, selectedLang, {
         logger: m => {
           if (m.status === 'recognizing text') {
             updateProgress(Math.round(m.progress * 100), `텍스트 인식 중... ${Math.round(m.progress * 100)}%`);
@@ -395,26 +403,17 @@
 
       updateProgress(100, '인식 완료!');
       document.getElementById('progressWrap').style.display = 'none';
-      ocrResult = data;
 
-      document.getElementById('ocrOutput').value = data.text.trim();
+      rawText = data.text.trim();
+      document.getElementById('ocrOutput').value = rawText;
+      document.getElementById('highlightedOutput').innerHTML = highlightNumbers(escapeHtml(rawText));
 
-      // 신뢰도 계산
-      const conf = Math.round(data.confidence);
-      document.getElementById('confFill').style.width = conf + '%';
-      document.getElementById('confFill').style.background = conf >= 70 ? '#22C55E' : conf >= 40 ? '#F59E0B' : '#EF4444';
-      document.getElementById('confPct').textContent = conf + '%';
-      document.getElementById('confPct').style.color = conf >= 70 ? '#16A34A' : conf >= 40 ? '#D97706' : '#DC2626';
-
-      // 정보 탭
-      const img = document.getElementById('previewImg');
-      document.getElementById('infoFilename').textContent = selectedFile.name;
-      document.getElementById('infoSize').textContent = img.naturalWidth + ' × ' + img.naturalHeight + ' px';
-      document.getElementById('infoLang').textContent = selectedLang.replace(/\+/g, ' + ');
-      document.getElementById('infoConf').textContent = conf + '%';
+      // 금액 파싱 및 표시
+      const amounts = parseAmounts(rawText);
+      renderAmountSummary(amounts);
 
       document.getElementById('resultArea').style.display = 'block';
-      document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('amountSummary').scrollIntoView({ behavior: 'smooth' });
 
     } catch (err) {
       console.error(err);
@@ -426,24 +425,82 @@
     }
   }
 
+  // 금액 파싱
+  function parseAmounts(text) {
+    const patterns = [
+      /(\d{1,3}(?:,\d{3})*)\s*원/g,
+      /₩\s*(\d{1,3}(?:,\d{3})*)/g,
+    ];
+    const amounts = [];
+    patterns.forEach(re => {
+      let m;
+      while ((m = re.exec(text)) !== null) {
+        const val = parseInt(m[1].replace(/,/g, ''));
+        if (val > 0) amounts.push(val);
+      }
+    });
+    return [...new Set(amounts)].sort((a, b) => b - a);
+  }
+
+  // 숫자/금액 강조 (HTML 이스케이프 후 적용)
+  function highlightNumbers(escapedText) {
+    return escapedText.replace(
+      /(\d{1,3}(?:,\d{3})*\s*원|₩\s*\d{1,3}(?:,\d{3})*|\d+,\d{3})/g,
+      '<mark class="num-highlight">$1</mark>'
+    );
+  }
+
+  function escapeHtml(text) {
+    return text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // 금액 요약 렌더링
+  function renderAmountSummary(amounts) {
+    const summary = document.getElementById('amountSummary');
+    const listEl = document.getElementById('amountList');
+    const totalEl = document.getElementById('amountTotal');
+
+    if (amounts.length === 0) {
+      summary.style.display = 'none';
+      return;
+    }
+
+    listEl.innerHTML = amounts.map(v =>
+      `<span class="amount-chip">${v.toLocaleString()}원</span>`
+    ).join('');
+
+    if (amounts.length >= 2) {
+      const max = amounts[0];
+      totalEl.textContent = `최대 금액: ${max.toLocaleString()}원`;
+      totalEl.style.display = 'block';
+    } else {
+      totalEl.style.display = 'none';
+    }
+
+    summary.style.display = 'block';
+  }
+
   // 탭 전환
-  document.getElementById('tabText').addEventListener('click', () => {
-    document.getElementById('tabText').classList.add('active');
-    document.getElementById('tabInfo').classList.remove('active');
-    document.getElementById('panelText').style.display = 'block';
-    document.getElementById('panelInfo').style.display = 'none';
+  document.getElementById('tabHighlight').addEventListener('click', () => {
+    document.getElementById('tabHighlight').classList.add('active');
+    document.getElementById('tabRaw').classList.remove('active');
+    document.getElementById('panelHighlight').style.display = 'block';
+    document.getElementById('panelRaw').style.display = 'none';
   });
-  document.getElementById('tabInfo').addEventListener('click', () => {
-    document.getElementById('tabInfo').classList.add('active');
-    document.getElementById('tabText').classList.remove('active');
-    document.getElementById('panelInfo').style.display = 'block';
-    document.getElementById('panelText').style.display = 'none';
+  document.getElementById('tabRaw').addEventListener('click', () => {
+    document.getElementById('tabRaw').classList.add('active');
+    document.getElementById('tabHighlight').classList.remove('active');
+    document.getElementById('panelRaw').style.display = 'block';
+    document.getElementById('panelHighlight').style.display = 'none';
   });
 
-  // 복사
+  // 복사 (원본 텍스트 기준)
   document.getElementById('copyBtn').addEventListener('click', () => {
-    const text = document.getElementById('ocrOutput').value;
-    navigator.clipboard.writeText(text).then(() => {
+    navigator.clipboard.writeText(rawText).then(() => {
       const btn = document.getElementById('copyBtn');
       btn.textContent = '✅ 복사됨!';
       setTimeout(() => btn.textContent = '📋 복사', 2000);
@@ -452,12 +509,11 @@
 
   // TXT 다운로드
   document.getElementById('downloadBtn').addEventListener('click', () => {
-    const text = document.getElementById('ocrOutput').value;
-    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+    const blob = new Blob([rawText], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = (selectedFile ? selectedFile.name.replace(/\.[^.]+$/, '') : 'ocr-result') + '.txt';
+    a.download = (selectedFile ? selectedFile.name.replace(/\.[^.]+$/, '') : 'receipt-ocr') + '.txt';
     a.click();
     URL.revokeObjectURL(url);
   });
@@ -465,14 +521,23 @@
   // 초기화
   document.getElementById('resetBtn').addEventListener('click', () => {
     selectedFile = null;
-    ocrResult = null;
+    rawText = '';
     document.getElementById('previewWrap').style.display = 'none';
     document.getElementById('previewImg').src = '';
     document.getElementById('startOcrBtn').style.display = 'none';
     document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('amountSummary').style.display = 'none';
     document.getElementById('progressWrap').style.display = 'none';
     document.getElementById('fileInput').value = '';
+    document.getElementById('ocrOutput').value = '';
+    document.getElementById('highlightedOutput').innerHTML = '';
+    document.getElementById('amountList').innerHTML = '';
     hideError();
+    // 탭 초기화
+    document.getElementById('tabHighlight').classList.add('active');
+    document.getElementById('tabRaw').classList.remove('active');
+    document.getElementById('panelHighlight').style.display = 'block';
+    document.getElementById('panelRaw').style.display = 'none';
   });
 
   function updateProgress(pct, text) {
