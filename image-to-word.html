@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZGENFSXWC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9ZGENFSXWC');
+</script>
+  <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="naver-site-verification" content="8b7cc3e6a6d8b741223048e64bc107c0b8aa4936">
+  <meta name="google-site-verification" content="tNM8tmr_6DFold03YSScWz4KEtu5Zo0Fsqc03u5Afms">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지를 워드로 변환 — 사진 속 텍스트 DOCX 파일 만들기 무료 | WooaOCR</title>
+  <meta name="description" content="JPG·PNG 이미지 속 텍스트를 인식해 편집 가능한 워드(DOCX) 파일로 즉시 변환합니다. 로그인 없이 무료, 파일은 서버에 저장되지 않습니다.">
+  <meta name="keywords" content="이미지 워드 변환, 사진 워드파일 만들기, 이미지를 docx로, JPG to Word, PNG 워드 변환, 스캔 이미지 워드 파일, WooaOCR">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://wooaocr.wooahouse.com/image-to-word.html">
+  <link rel="alternate" hreflang="ko" href="https://wooaocr.wooahouse.com/image-to-word.html">
+  <link rel="alternate" hreflang="en" href="https://wooaocr.wooahouse.com/en/image-to-word.html">
+  <link rel="alternate" hreflang="x-default" href="https://wooaocr.wooahouse.com/en/image-to-word.html">
+  <meta property="og:title" content="이미지를 워드로 변환 — 사진 속 텍스트 DOCX 파일 만들기 무료 | WooaOCR">
+  <meta property="og:description" content="JPG·PNG 이미지 속 텍스트를 인식해 편집 가능한 워드(DOCX) 파일로 즉시 변환합니다. 로그인 없이 무료, 파일은 서버에 저장되지 않습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wooaocr.wooahouse.com/image-to-word.html">
+  <meta property="og:locale" content="ko_KR">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "이미지를 워드로 변환 | WooaOCR",
+    "url": "https://wooaocr.wooahouse.com/image-to-word.html",
+    "description": "이미지 속 텍스트를 인식해 편집 가능한 워드(DOCX) 파일로 변환하는 무료 온라인 도구",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Web",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"인식된 텍스트를 저장 전에 수정할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"네. 텍스트 상자에서 오탈자를 직접 수정한 뒤 워드 파일로 저장할 수 있습니다."}},
+      {"@type":"Question","name":"생성된 워드 파일은 어떤 프로그램에서 열 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"마이크로소프트 워드, 한워드, 구글 문서 등 .docx를 지원하는 대부분의 프로그램에서 열 수 있습니다."}},
+      {"@type":"Question","name":"파일이 서버에 업로드되나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 모든 처리가 브라우저에서만 이루어지며 파일이 서버로 전송되지 않습니다. 개인정보와 민감한 데이터가 외부로 유출될 걱정이 없으며, 기업 보안 환경에서도 안심하고 사용할 수 있습니다."}}
+    ]
+  }
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464921081676309" crossorigin="anonymous"></script>
+<script src="js/ad-dev-placeholder.js"></script>
+  <meta name="theme-color" content="#F97316">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .lang-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .lang-chip {
+      padding: 7px 16px; border-radius: 20px; border: 1.5px solid var(--border);
+      background: white; cursor: pointer; font-size: 0.85rem; font-family: inherit;
+      transition: all 0.15s; color: var(--text); font-weight: 500;
+    }
+    .lang-chip.active { background: var(--primary); border-color: var(--primary); color: white; font-weight: 700; }
+    .image-preview-wrap {
+      margin-top: 16px; border-radius: var(--radius); overflow: hidden;
+      border: 1px solid var(--border); background: #F9FAFB; text-align: center; padding: 12px;
+    }
+    .image-preview-wrap img { max-width: 100%; max-height: 300px; object-fit: contain; border-radius: var(--radius-sm); }
+    .ocr-output {
+      width: 100%; min-height: 200px; max-height: 400px; padding: 16px;
+      border: 1px solid var(--border); border-radius: 0 0 var(--radius) var(--radius);
+      font-size: 0.9rem; line-height: 1.8; font-family: 'Noto Sans KR', sans-serif;
+      resize: vertical; outline: none; background: white; white-space: pre-wrap; overflow-y: auto;
+      display: block; box-sizing: border-box;
+    }
+    .result-tabs { display: flex; border-bottom: 2px solid var(--border); margin-bottom: 0; }
+    .result-tab {
+      padding: 10px 20px; font-size: 0.88rem; font-weight: 600; cursor: pointer;
+      border: none; background: #F9FAFB; color: var(--text-light); font-family: inherit;
+      border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.15s;
+    }
+    .result-tab.active { color: var(--primary); border-bottom-color: var(--primary); background: white; }
+    .confidence-bar { margin-top: 8px; display: flex; align-items: center; gap: 10px; font-size: 0.82rem; color: var(--text-light); }
+    .confidence-track { flex: 1; height: 6px; background: #E5E7EB; border-radius: 99px; overflow: hidden; }
+    .confidence-fill { height: 100%; border-radius: 99px; background: #22C55E; transition: width 0.4s; }
+    .action-buttons { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+    .btn-action {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 20px; border-radius: var(--radius-sm); font-weight: 600;
+      cursor: pointer; border: none; font-size: 0.9rem; font-family: inherit; transition: background 0.15s;
+    }
+    .btn-docx { background: #2563EB; color: white; }
+    .btn-docx:hover { background: #1D4ED8; }
+    .btn-copy { background: var(--primary); color: white; }
+    .btn-copy:hover { background: var(--primary-dark); }
+    .btn-txt { background: #22C55E; color: white; }
+    .btn-txt:hover { background: #16A34A; }
+    .btn-reset { background: #F3F4F6; color: var(--text-light); }
+    .btn-reset:hover { background: #E5E7EB; }
+  </style>
+  <meta property="og:site_name" content="WooaOCR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="이미지를 워드로 변환 — 사진 속 텍스트 DOCX 파일 만들기 무료 | WooaOCR">
+  <meta name="twitter:description" content="JPG·PNG 이미지 속 텍스트를 인식해 편집 가능한 워드(DOCX) 파일로 즉시 변환합니다. 로그인 없이 무료, 파일은 서버에 저장되지 않습니다.">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">WooaOCR</a>
+    <nav>
+      <a href="image-ocr.html">이미지 OCR</a>
+      <a href="pdf-ocr.html">PDF OCR</a>
+      <a href="index.html">전체 도구 ›</a>
+    </nav>
+    <div class="header-right">
+      <div class="lang-switcher">
+        <a href="image-to-word.html" class="active">KO</a>
+        <span>|</span>
+        <a href="en/image-to-word.html">EN</a>
+      </div>
+      <a href="about.html" style="color:rgba(255,255,255,0.85); font-size:0.85rem; text-decoration:none; margin-left:8px;">소개</a>
+    </div>
+  </div>
+</header>
+
+<script src="js/wooa-sites-bar.js"></script>
+
+<div class="mobile-top-ad">
+  <ins class="adsbygoogle" style="display:block;width:100%;height:80px" data-ad-client="ca-pub-6464921081676309" data-ad-slot="7080296704" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div class="page-with-sidebar">
+<main class="tool-page">
+
+  <div class="breadcrumb">
+    <a href="index.html">🏠 홈</a>
+    <span>›</span>
+    <span>이미지→워드 변환</span>
+  </div>
+
+  <div class="tool-header">
+    <span class="tool-header-icon">📝</span>
+    <h1>이미지를 워드로 변환 — 사진 속 텍스트 DOCX 파일로</h1>
+    <p>JPG·PNG 이미지 속 텍스트를 인식해 편집 가능한 워드 파일로 만듭니다. 파일이 서버에 저장되지 않아 안전합니다.</p>
+  </div>
+
+  <!-- 언어 선택 -->
+  <div class="options-panel">
+    <div class="options-title">인식 언어</div>
+    <div class="lang-chips">
+      <button class="lang-chip active" data-lang="kor+eng">한국어 + 영어</button>
+      <button class="lang-chip" data-lang="kor">한국어만</button>
+      <button class="lang-chip" data-lang="eng">영어만</button>
+      <button class="lang-chip" data-lang="jpn">일본어</button>
+      <button class="lang-chip" data-lang="chi_sim">중국어 간체</button>
+    </div>
+  </div>
+
+  <!-- 드롭존 -->
+  <div class="drop-zone" id="dropZone" style="margin-top:16px;">
+    <span class="drop-zone-icon">🖼️</span>
+    <h3>이미지를 여기에 끌어다 놓으세요</h3>
+    <p>JPG · PNG · WebP · BMP 지원 | 최대 20MB</p>
+    <label for="fileInput" class="btn-select">이미지 파일 선택</label>
+    <input type="file" id="fileInput" accept="image/*" style="display:none">
+  </div>
+
+  <div style="margin-top:14px;padding:14px 16px;background:#FFF7ED;border-radius:10px;border:1px solid #FED7AA;font-size:0.83rem;line-height:1.8;color:#78350F;">
+    <div style="font-weight:700;margin-bottom:6px;">✅ 잘 인식되는 경우</div>
+    <div>📄 인쇄된 문서·스캔본 &nbsp;|&nbsp; 📰 뉴스·책 페이지 &nbsp;|&nbsp; 📊 표·스프레드시트 &nbsp;|&nbsp; 📸 선명한 고해상도 사진</div>
+    <div style="font-weight:700;margin-top:10px;margin-bottom:6px;">⚠️ 인식률이 낮은 경우</div>
+    <div>🎨 색상 배경 위 글자 &nbsp;|&nbsp; 🔤 흐리거나 기울어진 텍스트 &nbsp;|&nbsp; 📷 저해상도·흔들린 사진</div>
+  </div>
+
+  <!-- 이미지 미리보기 -->
+  <div id="previewWrap" class="image-preview-wrap" style="display:none;">
+    <img id="previewImg" src="" alt="미리보기">
+  </div>
+
+  <div id="errorMsg" class="alert alert-error" style="display:none;margin-top:12px;"></div>
+
+  <!-- 인식 버튼 -->
+  <button class="btn-convert" id="startOcrBtn" style="display:none;">🔍 텍스트 인식 시작</button>
+
+  <!-- 진행바 -->
+  <div class="progress-wrap" id="progressWrap">
+    <div class="progress-label">
+      <span id="progressText">준비 중...</span>
+      <span id="progressPct">0%</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  </div>
+
+  <!-- 결과 -->
+  <div id="resultArea" style="display:none;margin-top:24px;">
+    <div class="result-tabs">
+      <button class="result-tab active" id="tabText">📝 추출된 텍스트</button>
+      <button class="result-tab" id="tabInfo">ℹ️ 인식 정보</button>
+    </div>
+    <div id="panelText">
+      <textarea class="ocr-output" id="ocrOutput" spellcheck="false" placeholder="인식된 텍스트가 여기에 표시됩니다..."></textarea>
+    </div>
+    <div id="panelInfo" style="display:none; padding:16px; background:white; border:1px solid var(--border); border-top:none; border-radius:0 0 var(--radius) var(--radius);">
+      <div style="font-size:0.88rem; color:var(--text-light); line-height:2;">
+        <div>📄 <strong>파일명:</strong> <span id="infoFilename">—</span></div>
+        <div>📐 <strong>해상도:</strong> <span id="infoSize">—</span></div>
+        <div>🔤 <strong>인식 언어:</strong> <span id="infoLang">—</span></div>
+        <div>✅ <strong>신뢰도:</strong> <span id="infoConf">—</span></div>
+      </div>
+      <div class="confidence-bar" style="margin-top:12px;">
+        <span style="font-size:0.82rem;color:var(--text-light);white-space:nowrap;">신뢰도</span>
+        <div class="confidence-track"><div class="confidence-fill" id="confFill" style="width:0%;"></div></div>
+        <span id="confPct" style="font-size:0.82rem;font-weight:700;color:var(--text-light);">0%</span>
+      </div>
+    </div>
+    <p style="margin-top:10px;font-size:0.82rem;color:var(--text-light);">💡 워드 파일로 저장하기 전에 위 텍스트 상자에서 오탈자를 직접 수정할 수 있습니다.</p>
+    <div class="action-buttons">
+      <button class="btn-action btn-docx" id="downloadDocxBtn">📄 워드(DOCX) 저장</button>
+      <button class="btn-action btn-txt" id="downloadBtn">⬇️ TXT 저장</button>
+      <button class="btn-action btn-copy" id="copyBtn">📋 복사</button>
+      <button class="btn-action btn-reset" id="resetBtn">🔄 초기화</button>
+    </div>
+  </div>
+
+    <div class="related-tools">
+  <h2>함께 쓰면 좋은 도구</h2>
+  <div class="related-grid">
+    <a href="image-ocr.html" class="related-card"><span class="related-icon">🖼️</span><span>이미지 텍스트 추출</span></a>
+    <a href="pdf-ocr.html" class="related-card"><span class="related-icon">📄</span><span>PDF OCR</span></a>
+    <a href="batch-ocr.html" class="related-card"><span class="related-icon">📂</span><span>배치 OCR</span></a>
+    <a href="table-ocr.html" class="related-card"><span class="related-icon">📊</span><span>표 OCR</span></a>
+  </div>
+</div>
+<div class="wooa-orig-anchor"></div>
+<div class="tips-panel"><h3>💡 Tips</h3><ul><li>선명하고 대비가 뚜렷한 이미지일수록 인식률이 높습니다.</li><li>저장 전 텍스트 상자에서 오탈자를 검토하고 직접 수정하세요.</li><li>줄바꿈은 그대로 워드 문단으로 변환되어 저장됩니다.</li></ul></div>
+<div class="faq-section"><h2>자주 묻는 질문</h2><details><summary>인식된 텍스트를 저장 전에 수정할 수 있나요?</summary><p>네. 텍스트 상자에서 오탈자를 직접 수정한 뒤 워드 파일로 저장할 수 있습니다.</p></details><details><summary>생성된 워드 파일은 어떤 프로그램에서 열 수 있나요?</summary><p>마이크로소프트 워드, 한워드, 구글 문서 등 .docx를 지원하는 대부분의 프로그램에서 열 수 있습니다.</p></details><details><summary>파일이 서버에 업로드되나요?</summary><p>아니요. 모든 처리는 브라우저 안에서만 이루어지며 파일은 서버로 전송되지 않습니다. 개인정보와 민감한 데이터가 외부로 유출될 걱정이 없으며, 기업 보안 환경에서도 안심하고 사용할 수 있습니다.</p></details></div>
+
+</main>
+
+<aside class="tool-sidebar"></aside>
+</div>
+
+<footer class="footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docx@9.7.1/dist/index.iife.js"></script>
+<script>
+  let selectedFile = null;
+  let selectedLang = 'kor+eng';
+  let ocrResult = null;
+
+  // 언어 칩 선택
+  document.querySelectorAll('.lang-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.lang-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      selectedLang = chip.dataset.lang;
+    });
+  });
+
+  // 드롭존
+  const dropZone = document.getElementById('dropZone');
+  dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+  dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+  dropZone.addEventListener('drop', e => {
+    e.preventDefault(); dropZone.classList.remove('drag-over');
+    if (e.dataTransfer.files[0]) loadFile(e.dataTransfer.files[0]);
+  });
+  dropZone.addEventListener('click', () => document.getElementById('fileInput').click());
+  document.getElementById('fileInput').addEventListener('change', e => {
+    if (e.target.files[0]) loadFile(e.target.files[0]);
+  });
+
+  function loadFile(file) {
+    if (!file.type.startsWith('image/')) {
+      showError('이미지 파일만 업로드할 수 있습니다.'); return;
+    }
+    if (file.size > 20 * 1024 * 1024) {
+      showError('파일 크기가 20MB를 초과합니다.'); return;
+    }
+    hideError();
+    selectedFile = file;
+    ocrResult = null;
+    document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('progressWrap').style.display = 'none';
+
+    const reader = new FileReader();
+    reader.onload = e => {
+      document.getElementById('previewImg').src = e.target.result;
+      document.getElementById('previewWrap').style.display = 'block';
+      document.getElementById('startOcrBtn').style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+  }
+
+  document.getElementById('startOcrBtn').addEventListener('click', startOcr);
+
+  // 이미지 전처리: 2x 업스케일 + 대비 강화
+  async function prepareCanvas(file) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      const url = URL.createObjectURL(file);
+      img.onload = () => {
+        const scale = img.naturalWidth < 1000 ? 2 : 1; // 소형 이미지만 업스케일
+        const canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth * scale;
+        canvas.height = img.naturalHeight * scale;
+        const ctx = canvas.getContext('2d');
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        URL.revokeObjectURL(url);
+        // 대비 강화
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const d = imageData.data;
+        const factor = (259 * (1.25 * 255 + 255)) / (255 * (259 - 1.25 * 255));
+        for (let i = 0; i < d.length; i += 4) {
+          d[i]   = Math.min(255, Math.max(0, factor * (d[i]   - 128) + 128));
+          d[i+1] = Math.min(255, Math.max(0, factor * (d[i+1] - 128) + 128));
+          d[i+2] = Math.min(255, Math.max(0, factor * (d[i+2] - 128) + 128));
+        }
+        ctx.putImageData(imageData, 0, 0);
+        resolve(canvas);
+      };
+      img.onerror = reject;
+      img.src = url;
+    });
+  }
+
+  async function startOcr() {
+    if (!selectedFile) return;
+    document.getElementById('startOcrBtn').disabled = true;
+    document.getElementById('startOcrBtn').textContent = '인식 중...';
+    document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('progressWrap').style.display = 'block';
+    hideError();
+
+    updateProgress(0, 'OCR 엔진 초기화 중...');
+
+    try {
+      updateProgress(3, '이미지 전처리 중...');
+      const ocrTarget = await prepareCanvas(selectedFile);
+
+      const { data } = await Tesseract.recognize(ocrTarget, selectedLang, {
+        logger: m => {
+          if (m.status === 'recognizing text') {
+            updateProgress(Math.round(m.progress * 100), `텍스트 인식 중... ${Math.round(m.progress * 100)}%`);
+          } else if (m.status === 'loading tesseract core') {
+            updateProgress(5, 'OCR 코어 로딩 중...');
+          } else if (m.status === 'loading language traineddata') {
+            updateProgress(15, '언어 데이터 로딩 중...');
+          } else if (m.status === 'initializing api') {
+            updateProgress(25, 'API 초기화 중...');
+          }
+        }
+      });
+
+      updateProgress(100, '인식 완료!');
+      document.getElementById('progressWrap').style.display = 'none';
+      ocrResult = data;
+
+      document.getElementById('ocrOutput').value = data.text.trim();
+
+      // 신뢰도 계산
+      const conf = Math.round(data.confidence);
+      document.getElementById('confFill').style.width = conf + '%';
+      document.getElementById('confFill').style.background = conf >= 70 ? '#22C55E' : conf >= 40 ? '#F59E0B' : '#EF4444';
+      document.getElementById('confPct').textContent = conf + '%';
+      document.getElementById('confPct').style.color = conf >= 70 ? '#16A34A' : conf >= 40 ? '#D97706' : '#DC2626';
+
+      // 정보 탭
+      const img = document.getElementById('previewImg');
+      document.getElementById('infoFilename').textContent = selectedFile.name;
+      document.getElementById('infoSize').textContent = img.naturalWidth + ' × ' + img.naturalHeight + ' px';
+      document.getElementById('infoLang').textContent = selectedLang.replace(/\+/g, ' + ');
+      document.getElementById('infoConf').textContent = conf + '%';
+
+      document.getElementById('resultArea').style.display = 'block';
+      document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
+
+    } catch (err) {
+      console.error(err);
+      showError('텍스트 인식에 실패했습니다: ' + err.message);
+      document.getElementById('progressWrap').style.display = 'none';
+    } finally {
+      document.getElementById('startOcrBtn').disabled = false;
+      document.getElementById('startOcrBtn').textContent = '🔍 텍스트 인식 시작';
+    }
+  }
+
+  // 탭 전환
+  document.getElementById('tabText').addEventListener('click', () => {
+    document.getElementById('tabText').classList.add('active');
+    document.getElementById('tabInfo').classList.remove('active');
+    document.getElementById('panelText').style.display = 'block';
+    document.getElementById('panelInfo').style.display = 'none';
+  });
+  document.getElementById('tabInfo').addEventListener('click', () => {
+    document.getElementById('tabInfo').classList.add('active');
+    document.getElementById('tabText').classList.remove('active');
+    document.getElementById('panelInfo').style.display = 'block';
+    document.getElementById('panelText').style.display = 'none';
+  });
+
+  // 복사
+  document.getElementById('copyBtn').addEventListener('click', () => {
+    const text = document.getElementById('ocrOutput').value;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.getElementById('copyBtn');
+      btn.textContent = '✅ 복사됨!';
+      setTimeout(() => btn.textContent = '📋 복사', 2000);
+    });
+  });
+
+  // TXT 다운로드
+  document.getElementById('downloadBtn').addEventListener('click', () => {
+    const text = document.getElementById('ocrOutput').value;
+    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = (selectedFile ? selectedFile.name.replace(/\.[^.]+$/, '') : 'ocr-result') + '.txt';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  // 워드(DOCX) 다운로드
+  document.getElementById('downloadDocxBtn').addEventListener('click', async () => {
+    const btn = document.getElementById('downloadDocxBtn');
+    const text = document.getElementById('ocrOutput').value;
+    if (!text.trim()) { showError('저장할 텍스트가 없습니다.'); return; }
+    hideError();
+    const origText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = '⏳ 생성 중...';
+    try {
+      const { Document, Paragraph, TextRun, Packer } = docx;
+      const paragraphs = text.split('\n').map(line => new Paragraph({ children: [new TextRun(line)] }));
+      const doc = new Document({ sections: [{ children: paragraphs }] });
+      const blob = await Packer.toBlob(doc);
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = (selectedFile ? selectedFile.name.replace(/\.[^.]+$/, '') : 'ocr-result') + '.docx';
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error(err);
+      showError('워드 파일 생성에 실패했습니다: ' + err.message);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = origText;
+    }
+  });
+
+  // 초기화
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    selectedFile = null;
+    ocrResult = null;
+    document.getElementById('previewWrap').style.display = 'none';
+    document.getElementById('previewImg').src = '';
+    document.getElementById('startOcrBtn').style.display = 'none';
+    document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('progressWrap').style.display = 'none';
+    document.getElementById('fileInput').value = '';
+    hideError();
+  });
+
+  function updateProgress(pct, text) {
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressText').textContent = text;
+    document.getElementById('progressPct').textContent = pct + '%';
+  }
+  function showError(msg) { const el = document.getElementById('errorMsg'); el.textContent = msg; el.style.display = 'block'; }
+  function hideError() { document.getElementById('errorMsg').style.display = 'none'; }
+</script>
+<script src="js/wooahouse-originals-tool.js"></script>
+<script>window.PWA_CONFIG={appName:"WooaOCR",themeColor:"#F97316",icon:"📱",convertIds:['startOcrBtn','startPdfOcrBtn','startBatchBtn','convertBtn','processBtn','generateBtn','downloadBtn','downloadDocxBtn']};</script>
+<script src="js/pwa-install.js"></script>
+<script src="js/wooa-sidebar.js"></script>
+<script src="js/wooa-footer.js"></script>
+</body>
+</html>
